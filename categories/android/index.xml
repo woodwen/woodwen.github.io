@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on 木头的小屋</title>
+    <link>https://woodwen.github.io/categories/android/</link>
+    <description>Recent content in android on 木头的小屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 21 May 2021 14:55:25 +0800</lastBuildDate><atom:link href="https://woodwen.github.io/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安卓阅读器（Reader）单项目版版</title>
+      <link>https://woodwen.github.io/code/android-reader-single/</link>
+      <pubDate>Fri, 21 May 2021 14:55:25 +0800</pubDate>
+      
+      <guid>https://woodwen.github.io/code/android-reader-single/</guid>
+      <description>&lt;p&gt;小说阅读器（模块化开发/单项目开发，基于Kotlin+MVVM+Kodein/Hilt+Retrofit+Jsoup+&lt;!-- raw HTML omitted --&gt;
+Moshi+Coroutines+Flow+Jetpack+Coil+Room+Mockk等架构实现），用kotlin重写了“任阅”的阅读模块代码，优化，代码逻辑，降低内存使用率。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
