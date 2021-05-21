@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>build on 木头的小屋</title>
+    <link>https://woodwen.github.io/categories/build/</link>
+    <description>Recent content in build on 木头的小屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 21 May 2021 14:59:02 +0800</lastBuildDate><atom:link href="https://woodwen.github.io/categories/build/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Hugo&#43;GithubPages搭建博客</title>
+      <link>https://woodwen.github.io/code/build-hugo-githubpages-blog/</link>
+      <pubDate>Fri, 21 May 2021 14:59:02 +0800</pubDate>
+      
+      <guid>https://woodwen.github.io/code/build-hugo-githubpages-blog/</guid>
+      <description>&lt;p&gt;使用Hugo 结合 GitHub Pages 可快速免费建立个人博客。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;是静态网站生成器，使用go语言编写，与同类产品Hexo相比，具有简单、易用，高效，易扩展、快速部署等特点。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; 简单来说是GitHub免费给开发者提供的一款托管个人网站的产品。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

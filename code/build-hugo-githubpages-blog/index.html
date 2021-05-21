@@ -1,0 +1,603 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://woodwen.github.io">
+    <meta name="author" content="woodwen">
+    <meta name="description" content="写C#的挺惨的，不会的多点，不能安心写C#">
+    <meta name="keywords" content="C#, Kotlin ,python ,js ,Go语言(golang),winform , android ,小程序 ,逆向 ,软件架构, docker, k8s, 垃圾佬">
+    <meta name="generator" content="Hugo 0.82.0" />
+    <title>
+        
+           
+               使用Hugo&#43;GithubPages搭建博客 &vert; 木头的小屋
+           
+        
+    </title>
+    <meta name="description" content="使用Hugo&#43;GithubPages搭建博客 - 写C#的挺惨的，不会的多点，不能安心写C#">
+    <meta itemprop="name" content="使用Hugo&#43;GithubPages搭建博客">
+    <meta itemprop="description" content="使用Hugo&#43;GithubPages搭建博客 - 写C#的挺惨的，不会的多点，不能安心写C#">
+    <meta property="og:title" content="使用Hugo&#43;GithubPages搭建博客">
+    <meta property="og:description" content="使用Hugo&#43;GithubPages搭建博客 - 写C#的挺惨的，不会的多点，不能安心写C#">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://woodwen.github.io/code/build-hugo-githubpages-blog/">
+    <meta property="og:site_name" content="木头的小屋">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/code/build-hugo-githubpages-blog/" rel="alternate" type="application/rss+xml" title="木头的小屋" />
+    <link href="/code/build-hugo-githubpages-blog/" rel="feed" type="application/rss+xml" title="木头的小屋" />
+    
+
+    
+    <link rel="canonical" href="https://woodwen.github.io/code/build-hugo-githubpages-blog/">
+    
+
+    <link rel="stylesheet" href="https://woodwen.github.io/theme.css">
+
+    
+
+    
+        
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="https://woodwen.github.io/page/about/">About</a></li>
+                
+            
+                
+                    <li><a href="https://woodwen.github.io/page/about-bilberry/">About Bilberry</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/base/head.jpeg" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        木头的小屋
+                    </a>
+                </h3>
+
+                
+                    <span class="subtitle">刷个牙，洗个脸，新的一天，又开始了！</span>
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://woodwen.github.io/code/build-hugo-githubpages-blog/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://woodwen.github.io/code/build-hugo-githubpages-blog/">
+            使用Hugo&#43;GithubPages搭建博客
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-05-21</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://woodwen.github.io/categories/build/">build</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://woodwen.github.io/author/woodwen/">woodwen</a>
+                
+            </span>
+        
+    </div>
+
+    
+        
+
+        <p>使用Hugo 结合 GitHub Pages 可快速免费建立个人博客。</p>
+<p><a href="https://gohugo.io/">Hugo</a>是静态网站生成器，使用go语言编写，与同类产品Hexo相比，具有简单、易用，高效，易扩展、快速部署等特点。</p>
+<p><a href="https://pages.github.com/">GitHub Pages</a> 简单来说是GitHub免费给开发者提供的一款托管个人网站的产品。</p>
+<h1 id="__开始搭建__"><strong>开始搭建</strong></h1>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<ul>
+<li>
+<h1 id="系统版本">系统版本：</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">macOS Catalina  11.3.1
+Hugo version : v0.82.0
+</code></pre></div><ul>
+<li>
+<h1 id="安装hugo">安装Hugo：</h1>
+</li>
+</ul>
+<p><a href="https://gohugo.io/getting-started/installing/">Hugo官方安装文档</a></p>
+<p>Mac可以直接使用brew安装（其他系统请移步上面的官方安装文档）：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install hugo
+</code></pre></div><p>Hugo需要依赖git，请提前安装好</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo version    
+<span style="color:#75715e"># 查看Hugo版本</span>
+hugo v0.82.0+extended darwin/amd64 BuildDate<span style="color:#f92672">=</span>unknown
+</code></pre></div><ul>
+<li>
+<h1 id="使用hugo创建博客">使用Hugo创建博客：</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># blog目录就是创建的博客目录</span>
+hugo new site blog  
+
+<span style="color:#75715e"># 项目树状结构</span>
+tree blog/
+
+blog/
+|-- archetypes
+|   -- default.md
+|-- config.toml         <span style="color:#75715e"># 博客的配置文件</span>
+|-- content             <span style="color:#75715e"># 博客文章存放目录（markdown文件）</span>
+|-- data                    
+|-- layouts
+|-- static              <span style="color:#75715e"># 静态文件/图片/CSS/JS文件</span>
+|-- themes              <span style="color:#75715e"># 博客主题模板存放目录</span>
+</code></pre></div><ul>
+<li>
+<h1 id="配置博客主题">配置博客主题：</h1>
+</li>
+</ul>
+<p><a href="https://themes.gohugo.io/">官方主题模板</a></p>
+<p><a href="https://github.com/Lednerb/bilberry-hugo-theme">这次使用Maupassant这个主题模板</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 进入根目录</span>
+cd blog
+
+<span style="color:#75715e"># 从github下载主题</span>
+git clone https://github.com/Lednerb/bilberry-hugo-theme themes/bilberry-hugo-theme
+
+<span style="color:#75715e"># 使用模板自带的配置文件替换默认配置文件</span>
+cp themes/bilberry-hugo-theme/exampleSite/config.toml .  
+
+<span style="color:#75715e"># 博客类型由下面几种组成</span>
+content/
+|-- article      <span style="color:#75715e"># 文章</span>
+|-- audio        <span style="color:#75715e"># 音乐</span>
+|-- code         <span style="color:#75715e"># 代码</span>
+|-- gallery      <span style="color:#75715e"># 图文，顶部图片，底部文字介绍</span>
+|-- link         <span style="color:#75715e"># 外部跳转</span>
+|-- page         <span style="color:#75715e"># 在顶部显示的如关于</span>
+|-- quote        <span style="color:#75715e"># 引用</span>
+|-- video        <span style="color:#75715e"># 视频</span>
+
+<span style="color:#75715e"># 具体的可以把 themes/bilberry-hugo-theme/exampleSite/content 中的各个模版拷贝出来尝试，语法也可以参考</span>
+
+</code></pre></div><p>修改config.toml文件（先只修改前几行，具体细节修改可看主题模板的网址按需修改）：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">
+vim config.toml
+
+<span style="color:#75715e"># 小弟把各个 字段稍微注释了 按需求改</span>
+
+title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;木头的小屋&#34;</span>
+baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://woodwen.github.io&#34;</span>
+theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bilberry-hugo-theme&#34;</span>
+
+<span style="color:#75715e"># 是否生成robots.txt文件</span>
+enableRobotsTXT <span style="color:#f92672">=</span> true
+
+<span style="color:#75715e"># 设置默认语言</span>
+DefaultContentLanguage <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;en&#34;</span>
+
+<span style="color:#75715e"># 为您的站点启用/禁用Google Analytics统计信息</span>
+googleAnalytics <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+
+<span style="color:#75715e"># 通过Disqus启用/禁用对文章的评论</span>
+disqusShortname <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+
+<span style="color:#75715e"># 启用/禁用带有新选项卡的打开链接</span>
+<span style="color:#f92672">[</span>blackfriday<span style="color:#f92672">]</span>
+  hrefTargetBlank <span style="color:#f92672">=</span> false
+
+<span style="color:#f92672">[</span>params<span style="color:#f92672">]</span>
+  <span style="color:#75715e"># 将由模板导入的自定义CSS/JS模块</span>
+  <span style="color:#75715e"># 文件相对于静态/目录或URL</span>
+  <span style="color:#75715e"># 导入文件的顺序如下：</span>
+  <span style="color:#75715e"># 分别是theme.css和theme.js</span>
+  css_modules <span style="color:#f92672">=</span> <span style="color:#f92672">[]</span>
+  js_modules <span style="color:#f92672">=</span> <span style="color:#f92672">[]</span>
+
+  <span style="color:#75715e"># 搜索引擎的描述和元数据</span>
+  author <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;woodwen&#34;</span>
+  description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bilberry Premium Theme for Hugo.&#34;</span>
+  keywords <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts&#34;</span>
+
+  <span style="color:#75715e"># 一次要展示多少篇文章</span>
+  paginate <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
+
+  <span style="color:#75715e"># 启用/禁用MathJax</span>
+  enable_mathjax    <span style="color:#f92672">=</span> false
+
+  <span style="color:#75715e"># 启用/禁用algolia搜索</span>
+  algolia_search    <span style="color:#f92672">=</span> false
+  algolia_appId     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;45CEN6X6AT&#34;</span>
+  algolia_apiKey    <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;16030625f1a4d0dd3b8aefd794fd4cf1&#34;</span>
+  algolia_indexName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bilberry-hugo-theme&#34;</span>
+  <span style="color:#75715e"># 如果要同时在所有语言的所有文章中搜索，请将此选项设置为false</span>
+  algolia_currentLanguageOnly <span style="color:#f92672">=</span> false
+
+  <span style="color:#75715e"># 通过commento启用/禁用对文章的评论</span>
+  commentoJsURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://commento.lednerb.de/js/commento.js&#34;</span>
+
+  <span style="color:#75715e"># Media配置</span>
+    <span style="color:#75715e"># 让hugo自动调整大小和裁剪你的图像到正确的大小</span>
+    <span style="color:#75715e"># 注意：启用后，图像文件将通过添加附加信息重命名，</span>
+    <span style="color:#75715e"># 即使图像大小正确。</span>
+    resizeImages <span style="color:#f92672">=</span> true
+
+  <span style="color:#75715e"># Header配置</span>
+    <span style="color:#75715e"># 如果你想用字幕的话</span>
+    subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;刷个牙，洗个脸，新的一天，又开始了！&#34;</span>
+
+    <span style="color:#75715e"># 如果您想使用libravatar或gravatar作为标题图像</span>
+    <span style="color:#75715e"># avatarEmail = &#34;code@lednerb.de&#34;</span>
+
+    <span style="color:#75715e"># 设置要使用的图像文件的路径|覆盖avatarEmail</span>
+    customImage <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/base/head.jpeg&#34;</span>
+
+    <span style="color:#75715e"># 鼠标悬浮图标</span>
+    overlayIcon <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fa-home&#34;</span>
+
+    <span style="color:#75715e"># 始终在非移动屏幕上显示顶部导航（带页面和搜索）</span>
+    permanentTopNav <span style="color:#f92672">=</span> false
+
+    <span style="color:#75715e"># 滚动时始终显示顶部导航</span>
+    <span style="color:#75715e"># 仅与permanentTopNav=true一起工作</span>
+    stickyNav <span style="color:#f92672">=</span> false
+
+    <span style="color:#75715e"># 在标题中显示语言选择器</span>
+    showHeaderLanguageChooser <span style="color:#f92672">=</span> false
+
+    <span style="color:#75715e"># Content配置</span>
+    <span style="color:#75715e"># 启用可选的固定页，以显示在索引顶部</span>
+    <span style="color:#75715e">#pinedpost=“/article/installating billberry主题/”</span>
+    <span style="color:#75715e"># 设置为true仅锁定到第一页，所有页面为false</span>
+    pinOnlyToFirstPage <span style="color:#f92672">=</span> true
+
+    <span style="color:#75715e"># 使用momentjs启用文章的PublishedDate的自动本地化</span>
+    enableMomentJs <span style="color:#f92672">=</span> true
+
+    <span style="color:#75715e"># 自定义日期格式|仅当MONTJS被禁用时才有效|仅适用于英文月名称</span>
+    <span style="color:#75715e"># 您可以使用此处找到的选项自定义它：</span>
+    <span style="color:#75715e"># https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference</span>
+    dateFormat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;2006-01-02&#34;</span>
+
+    <span style="color:#75715e"># 显示文章的估计阅读时间</span>
+    showReadingTime <span style="color:#f92672">=</span> false
+
+    <span style="color:#75715e"># 显示目录的最小字数</span>
+    tocMinWordCount <span style="color:#f92672">=</span> <span style="color:#ae81ff">400</span>
+
+  <span style="color:#75715e"># Footer配置</span>
+    showFooter <span style="color:#f92672">=</span> true
+
+    <span style="color:#75715e"># 页脚中最新发布的文章应该显示多少篇？</span>
+    <span style="color:#75715e"># 设置为-1可隐藏“最新帖子”列</span>
+    amountLatestPostsInFooter <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
+
+    <span style="color:#75715e"># 页脚部分应显示多少个类别？</span>
+    <span style="color:#75715e"># 设置为-1可隐藏“类别”列</span>
+    amountCategoriesInFooter <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
+
+    <span style="color:#75715e"># 在页脚中显示语言选择器</span>
+    showFooterLanguageChooser <span style="color:#f92672">=</span> false
+
+    <span style="color:#75715e"># 页脚链接的社交媒体配置文件URL</span>
+    showSocialMedia <span style="color:#f92672">=</span> true
+
+    <span style="color:#75715e"># 使用FontAwesome5定义链接（仅支持免费图标）</span>
+    <span style="color:#75715e"># all icons https://fontawesome.com/icons?d=gallery&amp;m=free</span>
+    <span style="color:#75715e"># brand icons https://fontawesome.com/icons?d=gallery&amp;s=brands&amp;m=free</span>
+    socialMediaLinks <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>
+      <span style="color:#75715e"># { link = &#34;https://twitter.com/TheRealLednerb&#34;, icon = &#34;fab fa-twitter&#34; },</span>
+      <span style="color:#f92672">{</span> link <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://github.com/woodwen&#34;</span>, icon <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fab fa-github&#34;</span> <span style="color:#f92672">}</span>,
+    <span style="color:#f92672">]</span>
+
+    <span style="color:#75715e"># 版权说明</span>
+    copyrightBy <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;by woodwen&#34;</span>
+    copyrightUseCurrentYear <span style="color:#f92672">=</span> false  // set to true to always display the current year in the copyright
+    copyrightYearOverride <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;2021&#34;</span>
+    copyrightUrl <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://github.com/woodwen&#34;</span>
+    creditsText <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bilberry Hugo Theme&#34;</span>
+    creditsUrl <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://github.com/Lednerb/bilberry-hugo-theme&#34;</span>
+
+
+<span style="color:#75715e"># 为您的多语言网站自定义可用语言</span>
+<span style="color:#75715e"># 或者删除[Languages]博客，只使用一种受支持语言的主题</span>
+<span style="color:#75715e"># [Languages]</span>
+<span style="color:#75715e">#  [Languages.en]</span>
+<span style="color:#75715e">#   weight = 1</span>
+<span style="color:#75715e">#  [Languages.de]</span>
+<span style="color:#75715e">#    weight = 2</span>
+<span style="color:#75715e">#    title = &#34;Mein cooler neuer Blog&#34;</span>
+<span style="color:#75715e">#    subtitle = &#34;Hallo Welt! Dies ist der epischste Untertitel aller Zeiten.&#34;</span>
+
+<span style="color:#75715e"># 不要更改下面的任何内容</span>
+<span style="color:#f92672">[</span>taxonomies<span style="color:#f92672">]</span>
+  author   <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;author&#34;</span>
+  tag      <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tags&#34;</span>
+  category <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;categories&#34;</span>
+  series   <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;series&#34;</span>
+
+<span style="color:#f92672">[</span>outputs<span style="color:#f92672">]</span>
+  home <span style="color:#f92672">=</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;JSON&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span> <span style="color:#f92672">]</span>
+  page <span style="color:#f92672">=</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;HTML&#34;</span> <span style="color:#f92672">]</span>
+
+<span style="color:#f92672">[</span>markup<span style="color:#f92672">]</span>
+  <span style="color:#f92672">[</span>markup.tableOfContents<span style="color:#f92672">]</span>
+    endLevel <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+    ordered <span style="color:#f92672">=</span> false
+    startLevel <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+
+</code></pre></div><p>创建一个空白About页。使用hugo new命令(其他模式的页面也类似，替换page)：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new page/about.md
+</code></pre></div><p>确保从站点的根目录运行它。这里page/about.md是相对于content文件夹的路径</p>
+<p>关于加载本地图片，可以先在static中建立博文的文件夹，然后放入图片，取用时可以直接取，如 /build-hugo-githubPages-blog/2.png 和 md原生稍微有点不一样</p>
+<pre><code>
+---
+title: &quot;About&quot;
+date: 2021-05-21T15:07:43+08:00
+draft: true
+excludeFromTopNav: false
+
+# set the link if you want to redirect the user.
+link: &quot;&quot;
+# set the html target parameter if you want to change default behavior
+target: &quot;_blank&quot;
+---
+
+</code></pre><p>启动hugo登陆看下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo server -D
+</code></pre></div><p>打开浏览器，访问 http://localhost:1313/ 即可：</p>
+<p><img src="/build-hugo-githubPages-blog/1.png" alt=""></p>
+<ul>
+<li>
+<h1 id="配置github">配置GitHub：</h1>
+</li>
+</ul>
+<p>在GitHub上创建一个新的repository：</p>
+<p><img src="/build-hugo-githubPages-blog/2.png" alt=""></p>
+<p>Repository name要求必须为 你的github名字+github.io (譬如我的名字是woodwen,就创建为woodwen.github.io)</p>
+<p>上传你的博客到github这个仓库（请提前与github做好ssh关联，不会的请打开搜索引擎输入关键词”github ssh“搜索真相）</p>
+<p>说明：小弟因为已经创建过这个仓库，同名检查通不过，所以报错。</p>
+<ul>
+<li>
+<h1 id="发版">发版</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo -D
+<span style="color:#75715e"># 生成的静态页面默认存放在public中，将public中的代码上传到github 前面创建的仓库中</span>
+<span style="color:#75715e"># 执行后会新增一个public目录，此目录就是静态文件，上传此文件夹里的文件即可</span>
+cd public
+
+git init
+git add .
+git commit -m <span style="color:#e6db74">&#39;first commit&#39;</span>
+git remote add origin git@github.com:your_github_name/your_github_name.github.io.git
+git push -u  origin master 
+
+</code></pre></div><p>之后，登陆https://your_github_name.github.io看看吧！</p>
+<ul>
+<li>
+<h1 id="说明">说明</h1>
+</li>
+</ul>
+<p>文章非原创，而是阅读原作者文章后，自行尝试后并记录</p>
+<p><a href="https://www.jianshu.com/p/fe0ac80eb5b9?from=singlemessage">原文章</a></p>
+<p><a href="https://github.com/flysnow-org/maupassant-hugo">关于博客网站的页面配置</a></p>
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/build/">build</a>
+                    
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/hugo/">hugo</a>
+                    
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/github-pages/">github pages</a>
+                    
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/blog/">blog</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+    <script defer src="https://commento.lednerb.de/js/commento.js"></script>
+    <div id="commento"></div>
+
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/build-hugo-githubpages-blog/">使用Hugo&#43;GithubPages搭建博客</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/android-reader-single/">Android Reader Single</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/build">Build
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/woodwen" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/woodwen" target="_blank">
+                &copy;
+                
+                2021
+                
+                by woodwen
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://woodwen.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+</body>
+
+</html>

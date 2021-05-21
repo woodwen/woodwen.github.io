@@ -2,9 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on 木头的小屋</title>
-    <link>woodwen.github.io/series/</link>
+    <link>https://woodwen.github.io/series/</link>
     <description>Recent content in Series on 木头的小屋</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language><atom:link href="woodwen.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://woodwen.github.io/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

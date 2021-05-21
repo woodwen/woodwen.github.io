@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on 木头的小屋</title>
+    <link>https://woodwen.github.io/page/</link>
+    <description>Recent content in Pages on 木头的小屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 21 May 2021 15:07:43 +0800</lastBuildDate><atom:link href="https://woodwen.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://woodwen.github.io/page/about/</link>
+      <pubDate>Fri, 21 May 2021 15:07:43 +0800</pubDate>
+      
+      <guid>https://woodwen.github.io/page/about/</guid>
+      <description>TODO: add content</description>
+    </item>
+    
+    <item>
+      <title>About Bilberry</title>
+      <link>https://woodwen.github.io/page/about-bilberry/</link>
+      <pubDate>Wed, 01 Nov 2017 13:18:45 +0100</pubDate>
+      
+      <guid>https://woodwen.github.io/page/about-bilberry/</guid>
+      <description>Bilberry is a premium theme for the Hugo Static Website Builder.
+It is full of little nice features, such as:
+ built-in integration for the wonderful algolia search built-in integration for the powerful disqus comments gravatar and custom image integration for the header keyboard shortcut for the search (press the s key, type something and hit enter or esc) responsive design - optimized for desktop and mobile devices full internationalization (i18n) support (en, de, fr, ru, es out of the box!</description>
+    </item>
+    
+  </channel>
+</rss>
