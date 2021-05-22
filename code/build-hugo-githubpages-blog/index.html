@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://woodwen.github.io">
     <meta name="author" content="woodwen">
-    <meta name="description" content="写C#的挺惨的，不会的多点，不能安心写C#">
+    <meta name="description" content="为了安心写C#，就需要会的多点">
     <meta name="keywords" content="C#, Kotlin ,python ,js ,Go语言(golang),winform , android ,小程序 ,逆向 ,软件架构, docker, k8s, 垃圾佬">
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.83.1" />
     <title>
         
            
@@ -18,11 +18,11 @@
            
         
     </title>
-    <meta name="description" content="使用Hugo&#43;GithubPages搭建博客 - 写C#的挺惨的，不会的多点，不能安心写C#">
+    <meta name="description" content="使用Hugo&#43;GithubPages搭建博客 - 为了安心写C#，就需要会的多点">
     <meta itemprop="name" content="使用Hugo&#43;GithubPages搭建博客">
-    <meta itemprop="description" content="使用Hugo&#43;GithubPages搭建博客 - 写C#的挺惨的，不会的多点，不能安心写C#">
+    <meta itemprop="description" content="使用Hugo&#43;GithubPages搭建博客 - 为了安心写C#，就需要会的多点">
     <meta property="og:title" content="使用Hugo&#43;GithubPages搭建博客">
-    <meta property="og:description" content="使用Hugo&#43;GithubPages搭建博客 - 写C#的挺惨的，不会的多点，不能安心写C#">
+    <meta property="og:description" content="使用Hugo&#43;GithubPages搭建博客 - 为了安心写C#，就需要会的多点">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
     <meta property="og:url" content="https://woodwen.github.io/code/build-hugo-githubpages-blog/">
     <meta property="og:site_name" content="木头的小屋">
@@ -61,10 +61,6 @@
             
                 
                     <li><a href="https://woodwen.github.io/page/about/">About</a></li>
-                
-            
-                
-                    <li><a href="https://woodwen.github.io/page/about-bilberry/">About Bilberry</a></li>
                 
             
         </ul>
@@ -163,28 +159,40 @@
 
         <p>使用Hugo 结合 GitHub Pages 可快速免费建立个人博客。</p>
 <p><a href="https://gohugo.io/">Hugo</a>是静态网站生成器，使用go语言编写，与同类产品Hexo相比，具有简单、易用，高效，易扩展、快速部署等特点。</p>
+<p><a href="https://themes.gohugo.io/">Hugo官方主题模板</a></p>
 <p><a href="https://pages.github.com/">GitHub Pages</a> 简单来说是GitHub免费给开发者提供的一款托管个人网站的产品。</p>
 <h1 id="__开始搭建__"><strong>开始搭建</strong></h1>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <ul>
 <li>
-<h1 id="系统版本">系统版本：</h1>
-</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">macOS Catalina  11.3.1
-Hugo version : v0.82.0
-</code></pre></div><ul>
-<li>
 <h1 id="安装hugo">安装Hugo：</h1>
 </li>
 </ul>
 <p><a href="https://gohugo.io/getting-started/installing/">Hugo官方安装文档</a></p>
+<ul>
+<li>
+<h1 id="安装hugomac">安装Hugo（mac）：</h1>
+</li>
+</ul>
 <p>Mac可以直接使用brew安装（其他系统请移步上面的官方安装文档）：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install hugo
 </code></pre></div><p>Hugo需要依赖git，请提前安装好</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo version    
 <span style="color:#75715e"># 查看Hugo版本</span>
 hugo v0.82.0+extended darwin/amd64 BuildDate<span style="color:#f92672">=</span>unknown
+</code></pre></div><ul>
+<li>
+<h1 id="安装hugowindows">安装Hugo（windows）：</h1>
+</li>
+</ul>
+<p>Windows端有4种方式：Chocolatey，Scoop，官方编译好的exe，自己编译</p>
+<p>我们选择下载<a href="https://github.com/gohugoio/hugo/releases">官方编译好的exe</a>,选择hugo_x.x.x_Windows-64bit.zip</p>
+<p>解压缩放到本地文件夹中，比如我放在C:\soft\hugo中</p>
+<p>接着配置环境变量，右击我的电脑-&gt;属性-&gt;高级系统设置-&gt;环境变量-&gt;Path中加入C:\soft\hugo</p>
+<p>Hugo需要依赖git，请提前安装好</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo version    
+<span style="color:#75715e"># 查看Hugo版本</span>
+hugo v0.83.1-5AFE0A57 windows/amd64 BuildDate<span style="color:#f92672">=</span>2021-05-02T14:38:05Z VendorInfo<span style="color:#f92672">=</span>gohugoio
 </code></pre></div><ul>
 <li>
 <h1 id="使用hugo创建博客">使用Hugo创建博客：</h1>
@@ -210,8 +218,7 @@ blog/
 <h1 id="配置博客主题">配置博客主题：</h1>
 </li>
 </ul>
-<p><a href="https://themes.gohugo.io/">官方主题模板</a></p>
-<p><a href="https://github.com/Lednerb/bilberry-hugo-theme">这次使用Maupassant这个主题模板</a></p>
+<p><a href="https://github.com/Lednerb/bilberry-hugo-theme">这次使用bilberry这个主题模板</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 进入根目录</span>
 cd blog
 
@@ -270,8 +277,8 @@ disqusShortname <span style="color:#f92672">=</span> <span style="color:#e6db74"
 
   <span style="color:#75715e"># 搜索引擎的描述和元数据</span>
   author <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;woodwen&#34;</span>
-  description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bilberry Premium Theme for Hugo.&#34;</span>
-  keywords <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts&#34;</span>
+  description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;为了安心写C#，就需要会的多点&#34;</span>
+  keywords <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;C#, Kotlin ,python ,js ,Go语言(golang),winform , android ,小程序 ,逆向 ,软件架构, docker, k8s, 垃圾佬&#34;</span>
 
   <span style="color:#75715e"># 一次要展示多少篇文章</span>
   paginate <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
@@ -448,14 +455,6 @@ git remote add origin git@github.com:your_github_name/your_github_name.github.io
 git push -u  origin master 
 
 </code></pre></div><p>之后，登陆https://your_github_name.github.io看看吧！</p>
-<ul>
-<li>
-<h1 id="说明">说明</h1>
-</li>
-</ul>
-<p>文章非原创，而是阅读原作者文章后，自行尝试后并记录</p>
-<p><a href="https://www.jianshu.com/p/fe0ac80eb5b9?from=singlemessage">原文章</a></p>
-<p><a href="https://github.com/flysnow-org/maupassant-hugo">关于博客网站的页面配置</a></p>
     
 </div>
 
