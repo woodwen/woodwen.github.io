@@ -5,7 +5,19 @@
     <link>https://woodwen.github.io/categories/build/</link>
     <description>Recent content in build on 木头的小屋</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 21 May 2021 14:59:02 +0800</lastBuildDate><atom:link href="https://woodwen.github.io/categories/build/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jul 2021 14:59:02 +0800</lastBuildDate><atom:link href="https://woodwen.github.io/categories/build/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用docker-compose部署Nextcloud和Onlyoffice组合包(包含nginx&#43;ssl&#43;postgres&#43;redis)</title>
+      <link>https://woodwen.github.io/code/build-docker-nextcloud-onlyoffice-postgres-nginx/</link>
+      <pubDate>Tue, 06 Jul 2021 14:59:02 +0800</pubDate>
+      
+      <guid>https://woodwen.github.io/code/build-docker-nextcloud-onlyoffice-postgres-nginx/</guid>
+      <description>&lt;p&gt;使用docker-compose部署Nextcloud和Onlyoffice组合包 可快速免费建立个人网盘。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://nextcloud.com/&#34;&gt;Nextcloud&lt;/a&gt;是一个私人网盘，使用PHP语言编写，是owncloud的一个分支，可以共享和协作处理文档、发送和接收电子邮件、管理您的日历以及进行视频聊天而不会泄露数据，上传下载可以达到硬盘满速，还具有简单、易用，高效，易扩展、快速部署等特点，不止网页可以访问，还同时拥有配套的客户端（windows，mac，安卓，ios）。作为完全内部部署的解决方案，Nextcloud Hub 提供在线协作的好处，而没有合规性和安全风险&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.onlyoffice.com/zh/&#34;&gt;ONLYOFFICE&lt;/a&gt;安全的办公室和生产力应用（社区版，手机端（手机useragent）不能编辑）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.nextcloud.com/&#34;&gt;Nextcloud 插件&lt;/a&gt; 因为和谐原因，一般我们选用下载后安装模式，而不是内部安装。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>使用Hugo&#43;GithubPages搭建博客</title>
       <link>https://woodwen.github.io/code/build-hugo-githubpages-blog/</link>
