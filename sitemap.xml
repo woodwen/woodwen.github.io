@@ -14,6 +14,9 @@
     <loc>https://woodwen.github.io/tags/dart/</loc>
     <lastmod>2022-01-07T14:55:25+08:00</lastmod>
   </url><url>
+    <loc>https://woodwen.github.io/tags/docker/</loc>
+    <lastmod>2022-01-07T14:55:25+08:00</lastmod>
+  </url><url>
     <loc>https://woodwen.github.io/tags/flutter/</loc>
     <lastmod>2022-01-07T14:55:25+08:00</lastmod>
   </url><url>
@@ -23,10 +26,22 @@
     <loc>https://woodwen.github.io/code/flutter-plugin/</loc>
     <lastmod>2022-01-07T14:55:25+08:00</lastmod>
   </url><url>
+    <loc>https://woodwen.github.io/tags/jellyfin/</loc>
+    <lastmod>2022-01-07T14:55:25+08:00</lastmod>
+  </url><url>
+    <loc>https://woodwen.github.io/categories/jellyfin/</loc>
+    <lastmod>2022-01-07T14:55:25+08:00</lastmod>
+  </url><url>
     <loc>https://woodwen.github.io/tags/plugin/</loc>
     <lastmod>2022-01-07T14:55:25+08:00</lastmod>
   </url><url>
     <loc>https://woodwen.github.io/tags/</loc>
+    <lastmod>2022-01-07T14:55:25+08:00</lastmod>
+  </url><url>
+    <loc>https://woodwen.github.io/tags/ubuntu/</loc>
+    <lastmod>2022-01-07T14:55:25+08:00</lastmod>
+  </url><url>
+    <loc>https://woodwen.github.io/code/build-ubuntu-docker-jellyfin/</loc>
     <lastmod>2022-01-07T14:55:25+08:00</lastmod>
   </url><url>
     <loc>https://woodwen.github.io/author/woodwen/</loc>
@@ -39,9 +54,6 @@
     <lastmod>2021-07-06T14:59:02+08:00</lastmod>
   </url><url>
     <loc>https://woodwen.github.io/categories/build/</loc>
-    <lastmod>2021-07-06T14:59:02+08:00</lastmod>
-  </url><url>
-    <loc>https://woodwen.github.io/tags/docker/</loc>
     <lastmod>2021-07-06T14:59:02+08:00</lastmod>
   </url><url>
     <loc>https://woodwen.github.io/tags/docker-compose/</loc>
