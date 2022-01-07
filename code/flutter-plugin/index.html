@@ -1,0 +1,519 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://woodwen.github.io">
+    <meta name="author" content="woodwen">
+    <meta name="description" content="为了安心写C#，就需要会的多点">
+    <meta name="keywords" content="C#, Kotlin ,python ,js ,Go语言(golang),winform , android ,小程序 ,逆向 ,软件架构, docker, k8s, 垃圾佬">
+    <meta name="generator" content="Hugo 0.83.1" />
+    <title>
+        
+           
+               Flutter 常用插件 &vert; 木头的小屋
+           
+        
+    </title>
+    <meta name="description" content="Flutter 常用插件 - 为了安心写C#，就需要会的多点">
+    <meta itemprop="name" content="Flutter 常用插件">
+    <meta itemprop="description" content="Flutter 常用插件 - 为了安心写C#，就需要会的多点">
+    <meta property="og:title" content="Flutter 常用插件">
+    <meta property="og:description" content="Flutter 常用插件 - 为了安心写C#，就需要会的多点">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://woodwen.github.io/code/flutter-plugin/">
+    <meta property="og:site_name" content="木头的小屋">
+    <meta property="og:type" content="article">
+
+    
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/code/flutter-plugin/" rel="alternate" type="application/rss+xml" title="木头的小屋" />
+    <link href="/code/flutter-plugin/" rel="feed" type="application/rss+xml" title="木头的小屋" />
+    
+
+    
+    <link rel="canonical" href="https://woodwen.github.io/code/flutter-plugin/">
+    
+
+    <link rel="stylesheet" href="https://woodwen.github.io/theme.css">
+
+    
+
+    
+        
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="https://woodwen.github.io/page/about/">About</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/base/head.jpeg" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        木头的小屋
+                    </a>
+                </h3>
+
+                
+                    <span class="subtitle">刷个牙，洗个脸，新的一天，又开始了！</span>
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://woodwen.github.io/code/flutter-plugin/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://woodwen.github.io/code/flutter-plugin/">
+            Flutter 常用插件
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-01-07</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://woodwen.github.io/categories/flutter/">flutter</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://woodwen.github.io/author/woodwen/">woodwen</a>
+                
+            </span>
+        
+    </div>
+
+    
+        
+
+        <p>一些好用的Flutter插件，摘自网上，方便自己查看</p>
+<ul>
+<li>
+<h1 id="多媒体">多媒体</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 近乎完美的媒体资源选择器</span>
+wechat_assets_picker 
+
+<span style="color:#75715e"># 图片选取、拍照图片</span>
+image_picker 
+
+<span style="color:#75715e"># 音频录制</span>
+flutter_audio_recorder 
+
+<span style="color:#75715e"># 压缩视频，删除音频，获得视频缩略图、获取视频信息等</span>
+video_compress 
+
+<span style="color:#75715e"># 图片压缩</span>
+flutter_image_compress
+
+<span style="color:#75715e"># 官方视频播放</span>
+video_player 
+
+<span style="color:#75715e"># 音频播放</span>
+audioplayers 
+
+<span style="color:#75715e"># 相机使用</span>
+camera 
+
+<span style="color:#75715e"># 扫描二维条形码</span>
+barcode_scan 
+
+<span style="color:#75715e"># 加载svg文件</span>
+flutter_svg 
+</code></pre></div><ul>
+<li>
+<h1 id="状态管理">状态管理</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 用于对象==比较，无须显示重写==和hashCode</span>
+equatable
+
+<span style="color:#75715e"># 增强Stream的强大武器</span>
+rxdart 
+
+<span style="color:#75715e"># 基于Stream的状态管理工具</span>
+bloc 
+
+<span style="color:#75715e"># 基于provider和bloc实现的数据共享与状态管理工具</span>
+flutter_bloc
+
+<span style="color:#75715e"># 基于InheritedWidget实现的数据共享与状态管理工具</span>
+provider
+
+<span style="color:#75715e"># 单向数据流的状态管理工具</span>
+redux 
+
+<span style="color:#75715e"># 简洁+大杂烩状态管理工具（依赖注入+跨页面交互+路由管理+主题切换）</span>
+getx
+</code></pre></div><ul>
+<li>
+<h1 id="跳转分享">跳转分享</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 微信分享、支付、lanuch迷你程序等</span>
+fluwx 
+
+<span style="color:#75715e"># 路由管理</span>
+fluro 
+
+<span style="color:#75715e"># 连接跳转网页、邮箱、短信等</span>
+url_launcher 
+
+<span style="color:#75715e"># 文本分享插件，可QQ/微信/邮箱/笔记等</span>
+share 
+</code></pre></div><ul>
+<li>
+<h1 id="桌面插件">桌面插件</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 改变桌面尺寸【MacOS/Windows/Linux】</span>
+window_size 
+
+<span style="color:#75715e"># Windows路径提供器，引入即可，使用同path_provider</span>
+path_provider_fde
+
+<span style="color:#75715e"># 文件选择器【MacOS/Windows/Linux】</span>
+file_chooser
+
+<span style="color:#75715e"># sqlite数据库,【iOS/Android/MacOS/Windows/Linux】</span>
+moor_ffi 
+</code></pre></div><ul>
+<li>
+<h1 id="数据相关">数据相关</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 获取平台路径【iOS/Android/MacOS/Linux】</span>
+path_provider 
+
+<span style="color:#75715e"># 询问权限访问</span>
+permission_handler 
+
+<span style="color:#75715e"># 数据库管理, 【iOS/Android/MacOS】</span>
+sqflite sqlite
+
+<span style="color:#75715e"># 数据库,【iOS/Android/MacOS/Windows/Linux】</span>
+moor_ffi sqlite
+
+<span style="color:#75715e"># 本地json数据存储</span>
+localstorage
+
+<span style="color:#75715e"># 本地xml数据存储【iOS/Android/MacOS/Web】</span>
+shared_preferences 
+</code></pre></div><ul>
+<li>
+<h1 id="网络相关">网络相关</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 获取本机ip</span>
+get_ip 
+
+<span style="color:#75715e"># 获取手机网络状态</span>
+connectivity 
+
+<span style="color:#75715e"># 网络请求</span>
+http
+
+<span style="color:#75715e"># 网络请求</span>
+dio 
+</code></pre></div><ul>
+<li>
+<h1 id="转换相关">转换相关</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 日期格式化</span>
+date_format
+
+<span style="color:#75715e"># 可以用日期和数字格式化和解析</span>
+intl 
+
+<span style="color:#75715e"># 数据加解密</span>
+encrypt 
+</code></pre></div><ul>
+<li>
+<h1 id="文本处理">文本处理</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 显示markdown文件</span>
+markdown 
+</code></pre></div><ul>
+<li>
+<h1 id="视图相关">视图相关</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 官方webview支持</span>
+webview_flutter 
+
+<span style="color:#75715e"># 加载动画</span>
+flutter_spinkit
+
+<span style="color:#75715e"># 组件点击后旋转和转回</span>
+toggle_rotate 
+
+<span style="color:#75715e"># 下拉刷新和上拉加载更多</span>
+pull_to_refresh
+
+<span style="color:#75715e"># n角星的绘制、星级展示、评分组件</span>
+flutter_star 
+</code></pre></div><ul>
+<li>
+<h1 id="构建工具相关">构建/工具相关</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 值构造器，可以自动创建枚举、类、可以Json序列化</span>
+built_value 
+
+<span style="color:#75715e"># Json序列化工具</span>
+json_serializable 
+</code></pre></div><ul>
+<li>
+<h1 id="平台相关">平台相关</h1>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 手机设备信息</span>
+device_info 
+
+<span style="color:#75715e"># 使用intent打开Android界面【Android】</span>
+android_intent
+
+<span style="color:#75715e"># 加速度计和陀螺仪传感器</span>
+sensors 
+
+<span style="color:#75715e"># 蓝牙</span>
+flutter_blue 
+</code></pre></div>
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/flutter/">flutter</a>
+                    
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/dart/">dart</a>
+                    
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/plugin/">plugin</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+    <script defer src="https://commento.lednerb.de/js/commento.js"></script>
+    <div id="commento"></div>
+
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/flutter-plugin/">Flutter 常用插件</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/build-docker-nextcloud-onlyoffice-postgres-nginx/">使用docker-compose部署Nextcloud和Onlyoffice组合包(包含nginx&#43;ssl&#43;postgres&#43;redis)</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/build-hugo-githubpages-blog/">使用Hugo&#43;GithubPages搭建博客</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/android-reader-single/">安卓阅读器（Reader）单项目版版</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/build">Build
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/android">Android
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/flutter">Flutter
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/woodwen" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/woodwen" target="_blank">
+                &copy;
+                
+                2021
+                
+                by woodwen
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://woodwen.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+</body>
+
+</html>

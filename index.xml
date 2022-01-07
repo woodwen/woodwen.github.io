@@ -4,10 +4,19 @@
     <link>https://woodwen.github.io/</link>
     <description>Recent content on 木头的小屋</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 06 Jul 2021 14:59:02 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jan 2022 14:55:25 +0800</lastBuildDate>
     
         <atom:link href="https://woodwen.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Flutter 常用插件</title>
+      <link>https://woodwen.github.io/code/flutter-plugin/</link>
+      <pubDate>Fri, 07 Jan 2022 14:55:25 +0800</pubDate>
+      
+      <guid>https://woodwen.github.io/code/flutter-plugin/</guid>
+      <description>&lt;p&gt;一些好用的Flutter插件，摘自网上，方便自己查看&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>使用docker-compose部署Nextcloud和Onlyoffice组合包(包含nginx&#43;ssl&#43;postgres&#43;redis)</title>
