@@ -1,0 +1,459 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://woodwen.github.io">
+    <meta name="author" content="woodwen">
+    <meta name="description" content="为了安心写C#，就需要会的多点">
+    <meta name="keywords" content="C#, Kotlin ,python ,js ,Go语言(golang),winform , android ,小程序 ,逆向 ,软件架构, docker, k8s, 垃圾佬">
+    <meta name="generator" content="Hugo 0.83.1" />
+    <title>
+        
+           
+               Github搭建图床 &vert; 木头的小屋
+           
+        
+    </title>
+    <meta name="description" content="Github搭建图床 - 为了安心写C#，就需要会的多点">
+    <meta itemprop="name" content="Github搭建图床">
+    <meta itemprop="description" content="Github搭建图床 - 为了安心写C#，就需要会的多点">
+    <meta property="og:title" content="Github搭建图床">
+    <meta property="og:description" content="Github搭建图床 - 为了安心写C#，就需要会的多点">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://woodwen.github.io/code/build-github-vscode-picgo/">
+    <meta property="og:site_name" content="木头的小屋">
+    <meta property="og:type" content="article">
+
+    
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/code/build-github-vscode-picgo/" rel="alternate" type="application/rss+xml" title="木头的小屋" />
+    <link href="/code/build-github-vscode-picgo/" rel="feed" type="application/rss+xml" title="木头的小屋" />
+    
+
+    
+    <link rel="canonical" href="https://woodwen.github.io/code/build-github-vscode-picgo/">
+    
+
+    <link rel="stylesheet" href="https://woodwen.github.io/theme.css">
+
+    
+
+    
+        
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="https://woodwen.github.io/page/about/">About</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/base/head.jpeg" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        木头的小屋
+                    </a>
+                </h3>
+
+                
+                    <span class="subtitle">刷个牙，洗个脸，新的一天，又开始了！</span>
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://woodwen.github.io/code/build-github-vscode-picgo/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://woodwen.github.io/code/build-github-vscode-picgo/">
+            Github搭建图床
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-05-11</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://woodwen.github.io/categories/build/">build</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://woodwen.github.io/author/woodwen/">woodwen</a>
+                
+            </span>
+        
+    </div>
+
+    
+        
+
+        <p>使用GitHub搭建Markdown图床</p>
+<ul>
+<li>
+<h1 id="为啥会这么搞">为啥会这么搞</h1>
+<ul>
+<li>小弟一直在用md写博客，然后用<a href="https://woodwen.github.io/code/build-hugo-githubpages-blog/">hugo转成静态网站</a>挂在在github上，在vscode上写md非常爽。既可以预览，对语法的支持也非常好，唯一的一点缺点就是不能上传图片，以至于每次写博客的时候都要切到网站上粘图片再拷贝连接回来，非常麻烦，所以就准备用github来起一个图床，并配好picgo，以此更爽的在vscode下写用md写博客。</li>
+</ul>
+</li>
+<li>
+<h1 id="这么搞的好处">这么搞的好处</h1>
+<ul>
+<li>稳定，背靠大微软，基本没啥停服风险。</li>
+<li>不花钱，最重要的原因。</li>
+<li>容量大，一个仓库的上限是100G，用作图床，不瞎搞肯定够了</li>
+<li>用了cdn加速之后速度还是可以的</li>
+</ul>
+</li>
+<li>
+<h1 id="vscode上装的插件">vscode上装的插件</h1>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a>用来写md</li>
+<li><a href="https://github.com/Molunerfinn/PicGo">PicGo</a>一键上传剪切板/本地/输入框图片到github并导入到md</li>
+<li><a href="https://github.com/Molunerfinn/PicGo">PicGo</a>插件快捷键
+<ul>
+<li>windows下ctrl+alt+U从剪贴板粘贴图片</li>
+<li>windows下ctrl+alt+E打开资源管理器选择图片</li>
+<li>OsX下cmd+opt+U从剪贴板粘贴图片</li>
+<li>OsX下cmd+opt+E打开资源管理器选择图片</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="在github上的配置">在github上的配置</h1>
+<ul>
+<li>注册登录GitHub</li>
+<li>创建新仓库，必须是public
+<img src="https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/picture/20220511174135.png" alt="20220511174135"></li>
+<li>进入个人设置页面-》选择开发者设置
+<img src="https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/picture/20220511174251.png" alt="20220511174251"></li>
+<li>选择Personal access tokens-》选择生成新token，此token是图床上传时验证身份用的</li>
+<li>添加描述，小弟设置了永不过期,然后将repo选上
+<img src="https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/picture/20220511174446.png" alt="20220511174446"></li>
+<li>将生成的字符串保存，关闭页面后将再也无法看到这个字符串了
+<img src="https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/picture/20220511175315.png" alt="20220511175315"></li>
+</ul>
+</li>
+<li>
+<h1 id="在vscode上的配置">在vscode上的配置</h1>
+<ul>
+<li>picgo插件设置
+<ul>
+<li>vscode首选项-》设置-》搜索picgo</li>
+<li><img src="https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/pictures/20220511180722.png" alt="20220511180722"></li>
+<li><img src="https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/pictures/20220511180755.png" alt="20220511180755"></li>
+</ul>
+</li>
+<li>current设置为GitHub
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/pictures/20220511180816.png" alt="20220511180816"></li>
+</ul>
+</li>
+<li>Branch是我们仓库的分支，默认为master
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/pictures/20220511181009.png" alt="20220511181009"></li>
+</ul>
+</li>
+<li>custom url 使我们图片上传的连接，有两种方式可以使用</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">原生方式:
+  * 使用GitHub原生连接，格式为https://raw.githubusercontent.com/<span style="color:#f92672">[</span>用户名<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>仓库名<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>分支名<span style="color:#f92672">]</span>
+  * 例子：https://raw.githubusercontent.com/woodwen/blog_picture/master
+  * 原生方式有一个弊端就是，国内速度比较慢
+
+cdn加速方式:
+  * 格式为https://cdn.jsdelivr.net/gh/<span style="color:#f92672">[</span>用户名<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>仓库名<span style="color:#f92672">]</span>@<span style="color:#f92672">[</span>分支名<span style="color:#f92672">]</span>
+  * 例子：https://cdn.jsdelivr.net/gh/woodwen/blog_picture@master
+  * cdn加速的优点是国内访问速度比较快,缺点是2个月更新下github图床库
+</code></pre></div><pre><code>* ![20220511181157](https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/pictures/20220511181157.png)
+</code></pre>
+<ul>
+<li>path是我们的图片存储在仓库中的路径，比如我的是pictures/
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/pictures/20220511181602.png" alt="20220511181602"></li>
+</ul>
+</li>
+<li>repo是github上对应的图床仓库[用户名]/[仓库名]
+<ul>
+<li>blog_picture/master</li>
+<li><img src="https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/pictures/20220511182009.png" alt="20220511182009"></li>
+</ul>
+</li>
+<li>token是前面在github中设置的token
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/pictures/20220511182226.png" alt="20220511182226"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="现在可以愉快的在md中插入图片了">现在可以愉快的在md中插入图片了</h1>
+<ul>
+<li>比如这样,mac下，先截图，然后cmd+opt+u，就可以自动插入图片了
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/woodwen/picture_bed@dev/pictures/20220511182558.png" alt="20220511182558"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="感谢大家的观看">🙏感谢大家的观看</h1>
+</li>
+</ul>
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/build/">build</a>
+                    
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/gihub/">gihub</a>
+                    
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/picture/">picture</a>
+                    
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/vscode/">vscode</a>
+                    
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/picgo/">picgo</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+    <script defer src="https://commento.lednerb.de/js/commento.js"></script>
+    <div id="commento"></div>
+
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/build-github-vscode-picgo/">Github搭建图床</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/build-ubuntu-docker-jellyfin/">ubuntu下docker安装jellyfin</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/flutter-plugin/">Flutter 常用插件</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/build-docker-nextcloud-onlyoffice-postgres-nginx/">使用docker-compose部署Nextcloud和Onlyoffice组合包(包含nginx&#43;ssl&#43;postgres&#43;redis)</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/build-hugo-githubpages-blog/">使用Hugo&#43;GithubPages搭建博客</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/android-reader-single/">安卓阅读器（Reader）单项目版版</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/build">Build
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/android">Android
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/flutter">Flutter
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/jellyfin">Jellyfin
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/woodwen" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/woodwen" target="_blank">
+                &copy;
+                
+                2021
+                
+                by woodwen
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://woodwen.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+</body>
+
+</html>
