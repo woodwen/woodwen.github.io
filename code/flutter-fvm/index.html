@@ -14,18 +14,19 @@
     <title>
         
            
-               flutter &vert; 木头的小屋
+               Flutter fvm &vert; 木头的小屋
            
         
     </title>
-    <meta name="description" content="flutter - 为了安心写C#，就需要会的多点">
-    <meta itemprop="name" content="flutter">
-    <meta itemprop="description" content="flutter - 为了安心写C#，就需要会的多点">
-    <meta property="og:title" content="flutter">
-    <meta property="og:description" content="flutter - 为了安心写C#，就需要会的多点">
+    <meta name="description" content="Flutter fvm - 为了安心写C#，就需要会的多点">
+    <meta itemprop="name" content="Flutter fvm">
+    <meta itemprop="description" content="Flutter fvm - 为了安心写C#，就需要会的多点">
+    <meta property="og:title" content="Flutter fvm">
+    <meta property="og:description" content="Flutter fvm - 为了安心写C#，就需要会的多点">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://woodwen.github.io/tags/flutter/">
-    <meta property="og:site_name" content="木头的小屋"><meta property="og:type" content="website">
+    <meta property="og:url" content="https://woodwen.github.io/code/flutter-fvm/">
+    <meta property="og:site_name" content="木头的小屋">
+    <meta property="og:type" content="article">
 
     
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -39,12 +40,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/tags/flutter/" rel="alternate" type="application/rss+xml" title="木头的小屋" />
-    <link href="/tags/flutter/" rel="feed" type="application/rss+xml" title="木头的小屋" />
+    <link href="/code/flutter-fvm/" rel="alternate" type="application/rss+xml" title="木头的小屋" />
+    <link href="/code/flutter-fvm/" rel="feed" type="application/rss+xml" title="木头的小屋" />
     
 
     
-    <link rel="canonical" href="https://woodwen.github.io/tags/flutter/">
+    <link rel="canonical" href="https://woodwen.github.io/code/flutter-fvm/">
     
 
     <link rel="stylesheet" href="https://woodwen.github.io/theme.css">
@@ -113,11 +114,9 @@
 
     <div class="main container">
         
-    
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://woodwen.github.io/code/flutter-fvm/">
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://woodwen.github.io/code/flutter-fvm/">
     <i class="fas fa-fw fa-code"></i>
 </a>
 
@@ -162,12 +161,145 @@
     </div>
 
     
+        
+
         <p>fvm 通过引用每个项目使用的 Flutter SDK 版本来帮助满足一致的应用程序构建的需求。它还允许您安装多个 Flutter 版本，以便使用您的应用程序快速验证和测试即将发布的 Flutter 版本，而无需每次都等待 Flutter 安装</p>
 <p>fvm 可以两种模式使用 全局/虚拟环境</p>
+<ul>
+<li>
+<h1 id="为啥使用fvn">为啥使用fvn</h1>
+<ul>
+<li>不同的项目可能同时需要多个 Flutter SDK。</li>
+<li>测试新的 SDK 功能需要在Channels之间切换。</li>
+<li>版本切换很慢，每次都需要重新安装。</li>
+<li>无法保持应用程序中 SDK 的最新工作/使用版本。</li>
+<li>Flutter 更新会影响所有 Flutter 项目。</li>
+<li>团队中开发人员之间的开发环境不一致。</li>
+</ul>
+</li>
+<li>
+<h1 id="如何安装">如何安装</h1>
+<ul>
+<li>
+<p><a href="https://github.com/leoafarias/fvm/releases">从 GitHub 存储库下载</a></p>
+</li>
+<li>
+<p>Mac OS X/Linux下通过Homebrew包管理器安装</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 安装</span>
+brew tap leoafarias/fvm
+brew install fvm
+<span style="color:#75715e"># 卸载</span>
+brew uninstall fvm
+brew untap leoafarias/fvm
+</code></pre></div></li>
+<li>
+<p>Windows下通过choco包管理器安装</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 安装</span>
+choco install fvm
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<h1 id="如何配置">如何配置</h1>
+<ul>
+<li>环境变量配置
+<ul>
+<li>安装fvm后，设置环境变量 FVM_HOME 或 FVM_GIT_CACHE</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 以mac为例</span>
+<span style="color:#75715e"># 如果不设置，默认的 flutter SDK 缓存路径为 ~/fvm/versions</span>
+<span style="color:#75715e"># ~/.zshrc</span>
+export FVM_HOME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.fvm&#34;</span>
+<span style="color:#75715e"># 全局flutter 配置（default为切换后的flutter版本软链接）</span>
+export PATH<span style="color:#f92672">=</span>$HOME/.fvm/default/bin:$PATH
+<span style="color:#75715e"># 常规flutter 配置</span>
+export PUB_HOSTED_URL<span style="color:#f92672">=</span>https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL<span style="color:#f92672">=</span>https://storage.flutter-io.cn
+</code></pre></div></li>
+<li>IDE配置
+<ul>
+<li>vscode
+<ul>
+<li>可全局配置 vscode（～/Library/Application\ Support/Code\ -\ Insiders/User/settings.json）
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 以mac为例</span>
+<span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;dart.flutterSdkPaths&#34;</span>: <span style="color:#f92672">[</span>
+        <span style="color:#e6db74">&#34;/Users/usr/fvm/versions/stable&#34;</span>,
+        <span style="color:#e6db74">&#34;/Users/usr/fvm/versions/dev&#34;</span>
+    <span style="color:#f92672">]</span>
+<span style="color:#f92672">}</span>
+<span style="color:#75715e"># 然后在 vscode 控制面板中执行 Flutter: Change SDK 切换 Flutter SDK 版本，</span>
+<span style="color:#75715e"># 将同步记录到当前项目的 vscode 配置文件 .vscode/settings.json 中（dart.flutterSdkPath）</span>
+</code></pre></div></li>
+<li>也可直接编辑当前项目的 vscode 配置文件 .vscode/settings.json
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 以mac为例</span>
+<span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;dart.flutterSdkPath&#34;</span>: <span style="color:#e6db74">&#34;.fvm/flutter_sdk&#34;</span>,
+    <span style="color:#75715e"># or &#34;dart.flutterSdkPaths&#34;: [&#34;.fvm/flutter_sdk&#34;]</span>
 
-        
-            <a href="https://woodwen.github.io/code/flutter-fvm/" class="more">Continue reading</a>
-        
+    <span style="color:#75715e"># Remove .fvm files from search</span>
+    <span style="color:#e6db74">&#34;search.exclude&#34;</span>: <span style="color:#f92672">{</span>
+        <span style="color:#e6db74">&#34;**/.fvm&#34;</span>: true
+    <span style="color:#f92672">}</span>,
+    <span style="color:#75715e"># Remove from file watching</span>
+    <span style="color:#e6db74">&#34;files.watcherExclude&#34;</span>: <span style="color:#f92672">{</span>
+        <span style="color:#e6db74">&#34;**/.fvm&#34;</span>: true
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>android studio
+<ul>
+<li>preferences-》Flutter-》Flutter SDK path （填写绝对路径）
+<ul>
+<li>全局模式：/Users/mac/.fvm/default</li>
+<li>虚拟环境模式（项目中所有的flutter命令需要用 fvm flutter替换）：/项目根目录绝对路径/.fvm/flutter_sdk</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="如何使用">如何使用</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 查看现有远程版本</span>
+fvm releases list
+
+<span style="color:#75715e"># 安装flutter版本</span>
+fvm install 2.10.5
+
+<span style="color:#75715e"># 卸载flutter版本</span>
+fvm remove 2.10.5
+
+<span style="color:#75715e"># 查看本地已装的版本</span>
+fvm list installed versions
+
+<span style="color:#75715e"># 在程序根目录设置flutter版本</span>
+fvm use 2.10.5
+
+<span style="color:#75715e"># 设置全局版本</span>
+fvm global 2.10.5
+
+<span style="color:#75715e"># 项目目录下执行，可获取当前的使用版本</span>
+fvm list
+
+<span style="color:#75715e"># 在当前项目目录下执行，可获取当前项目的flutter版本</span>
+fvm flutter --version
+
+<span style="color:#75715e"># 在当前项目目录下执行，清理项目缓存</span>
+fvm flutter clean
+
+<span style="color:#75715e"># 在当前项目目录下执行，获取依赖包</span>
+fvm flutter pub get
+
+<span style="color:#75715e"># 在当前项目目录下执行，项目运营</span>
+fvm flutter run
+
+</code></pre></div></li>
+</ul>
     
 </div>
 
@@ -199,109 +331,19 @@
 
 </article>
 
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://woodwen.github.io/code/flutter-plugin/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://woodwen.github.io/code/flutter-plugin/">
-            Flutter 常用插件
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2022-01-07</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://woodwen.github.io/categories/flutter/">flutter</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://woodwen.github.io/author/woodwen/">woodwen</a>
-                
-            </span>
         
     </div>
 
     
-        <p>一些好用的Flutter插件，摘自网上，方便自己查看</p>
-
-        
-            <a href="https://woodwen.github.io/code/flutter-plugin/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://woodwen.github.io/tags/flutter/">flutter</a>
-                    
-                
-                    
-                    
-                    <a href="https://woodwen.github.io/tags/dart/">dart</a>
-                    
-                
-                    
-                    
-                    <a href="https://woodwen.github.io/tags/plugin/">plugin</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
+        <div id="comments-container">
             
+            
+    <script defer src="https://commento.lednerb.de/js/commento.js"></script>
+    <div id="commento"></div>
+
+
         </div>
     
-
-    
-    <div class="paginator">
-        
-
-        
-    </div>
-
-
 
     </div>
 
@@ -403,8 +445,7 @@
                 
                 by woodwen
             </a>
-            -
-            <a href="https://woodwen.github.io/tags/flutter/index.xml">RSS</a>
+            
         </div>
         <div class="author">
             <a href="https://github.com/Lednerb/bilberry-hugo-theme"

@@ -5,7 +5,17 @@
     <link>https://woodwen.github.io/code/</link>
     <description>Recent content in Codes on 木头的小屋</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 11 May 2022 14:55:25 +0800</lastBuildDate><atom:link href="https://woodwen.github.io/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 May 2022 14:55:25 +0800</lastBuildDate><atom:link href="https://woodwen.github.io/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flutter fvm</title>
+      <link>https://woodwen.github.io/code/flutter-fvm/</link>
+      <pubDate>Fri, 13 May 2022 14:55:25 +0800</pubDate>
+      
+      <guid>https://woodwen.github.io/code/flutter-fvm/</guid>
+      <description>&lt;p&gt;fvm 通过引用每个项目使用的 Flutter SDK 版本来帮助满足一致的应用程序构建的需求。它还允许您安装多个 Flutter 版本，以便使用您的应用程序快速验证和测试即将发布的 Flutter 版本，而无需每次都等待 Flutter 安装&lt;/p&gt;
+&lt;p&gt;fvm 可以两种模式使用 全局/虚拟环境&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Github搭建图床</title>
       <link>https://woodwen.github.io/code/build-github-vscode-picgo/</link>
