@@ -4,11 +4,12 @@
     <title>youhou on 木头的小屋</title>
     <link>https://woodwen.github.io/tags/youhou/</link>
     <description>Recent content in youhou on 木头的小屋</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://woodwen.github.io/tags/youhou/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Mar 2023 11:55:25 +0800</lastBuildDate><atom:link href="https://woodwen.github.io/tags/youhou/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>油猴入门</title>
       <link>https://woodwen.github.io/code/youhou-js/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 24 Mar 2023 11:55:25 +0800</pubDate>
       
       <guid>https://woodwen.github.io/code/youhou-js/</guid>
       <description>&lt;p&gt;油猴（Tampermonkey）是一款浏览器扩展，它允许用户编写和运行自定义脚本来修改网页的行为和样式。油猴最初是为谷歌浏览器开发的，但现在也支持其他浏览器，例如火狐浏览器、Safari和微软边缘等。&lt;/p&gt;
