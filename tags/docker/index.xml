@@ -5,7 +5,16 @@
     <link>https://woodwen.github.io/tags/docker/</link>
     <description>Recent content in docker on 木头的小屋</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Jan 2022 14:55:25 +0800</lastBuildDate><atom:link href="https://woodwen.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Mar 2023 14:55:25 +0800</lastBuildDate><atom:link href="https://woodwen.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>玩转云桌面（organizr）</title>
+      <link>https://woodwen.github.io/code/build-docker-organizr/</link>
+      <pubDate>Thu, 23 Mar 2023 14:55:25 +0800</pubDate>
+      
+      <guid>https://woodwen.github.io/code/build-docker-organizr/</guid>
+      <description>&lt;p&gt;Organizr，绝不止是漂亮的导航页这么简单&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>ubuntu下docker安装jellyfin</title>
       <link>https://woodwen.github.io/code/build-ubuntu-docker-jellyfin/</link>

@@ -4,10 +4,19 @@
     <link>https://woodwen.github.io/</link>
     <description>Recent content on 木头的小屋</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 13 May 2022 14:55:25 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 23 Mar 2023 14:55:25 +0800</lastBuildDate>
     
         <atom:link href="https://woodwen.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>玩转云桌面（organizr）</title>
+      <link>https://woodwen.github.io/code/build-docker-organizr/</link>
+      <pubDate>Thu, 23 Mar 2023 14:55:25 +0800</pubDate>
+      
+      <guid>https://woodwen.github.io/code/build-docker-organizr/</guid>
+      <description>&lt;p&gt;Organizr，绝不止是漂亮的导航页这么简单&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Flutter fvm</title>
@@ -82,6 +91,17 @@
       <guid>https://woodwen.github.io/code/android-reader-single/</guid>
       <description>&lt;p&gt;小说阅读器（模块化开发/单项目开发，基于Kotlin+MVVM+Kodein/Hilt+Retrofit+Jsoup+&lt;!-- raw HTML omitted --&gt;
 Moshi+Coroutines+Flow+Jetpack+Coil+Room+Mockk等架构实现），用kotlin重写了“任阅”的阅读模块代码，优化，代码逻辑，降低内存使用率。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>油猴入门</title>
+      <link>https://woodwen.github.io/code/youhou-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://woodwen.github.io/code/youhou-js/</guid>
+      <description>&lt;p&gt;油猴（Tampermonkey）是一款浏览器扩展，它允许用户编写和运行自定义脚本来修改网页的行为和样式。油猴最初是为谷歌浏览器开发的，但现在也支持其他浏览器，例如火狐浏览器、Safari和微软边缘等。&lt;/p&gt;
+&lt;p&gt;用户可以使用油猴来自定义网页，例如在网页中添加自己的功能、过滤网页中的广告、修改网页的布局、增加快捷方式等。通过使用 JavaScript 编写自己的脚本，用户可以在网页上添加交互性的元素，例如按钮、下拉菜单、弹出窗口等。&lt;/p&gt;
+&lt;p&gt;油猴还支持用户自定义脚本的存储和同步，这意味着用户可以在不同设备上使用相同的脚本，并确保它们保持同步和最新。油猴还提供了一个脚本库，用户可以在其中找到和安装其他人编写的脚本，并在自己的网页中使用。&lt;/p&gt;</description>
     </item>
     
   </channel>

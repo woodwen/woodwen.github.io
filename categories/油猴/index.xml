@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>油猴 on 木头的小屋</title>
+    <link>https://woodwen.github.io/categories/%E6%B2%B9%E7%8C%B4/</link>
+    <description>Recent content in 油猴 on 木头的小屋</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://woodwen.github.io/categories/%E6%B2%B9%E7%8C%B4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>油猴入门</title>
+      <link>https://woodwen.github.io/code/youhou-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://woodwen.github.io/code/youhou-js/</guid>
+      <description>&lt;p&gt;油猴（Tampermonkey）是一款浏览器扩展，它允许用户编写和运行自定义脚本来修改网页的行为和样式。油猴最初是为谷歌浏览器开发的，但现在也支持其他浏览器，例如火狐浏览器、Safari和微软边缘等。&lt;/p&gt;
+&lt;p&gt;用户可以使用油猴来自定义网页，例如在网页中添加自己的功能、过滤网页中的广告、修改网页的布局、增加快捷方式等。通过使用 JavaScript 编写自己的脚本，用户可以在网页上添加交互性的元素，例如按钮、下拉菜单、弹出窗口等。&lt;/p&gt;
+&lt;p&gt;油猴还支持用户自定义脚本的存储和同步，这意味着用户可以在不同设备上使用相同的脚本，并确保它们保持同步和最新。油猴还提供了一个脚本库，用户可以在其中找到和安装其他人编写的脚本，并在自己的网页中使用。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

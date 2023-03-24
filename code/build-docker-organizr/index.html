@@ -1,0 +1,425 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://woodwen.github.io">
+    <meta name="author" content="woodwen">
+    <meta name="description" content="为了安心写C#，就需要会的多点">
+    <meta name="keywords" content="C#, Kotlin ,python ,js ,Go语言(golang),winform , android ,小程序 ,逆向 ,软件架构, docker, k8s, 垃圾佬">
+    <meta name="generator" content="Hugo 0.83.1" />
+    <title>
+        
+           
+               玩转云桌面（organizr） &vert; 木头的小屋
+           
+        
+    </title>
+    <meta name="description" content="玩转云桌面（organizr） - 为了安心写C#，就需要会的多点">
+    <meta itemprop="name" content="玩转云桌面（organizr）">
+    <meta itemprop="description" content="玩转云桌面（organizr） - 为了安心写C#，就需要会的多点">
+    <meta property="og:title" content="玩转云桌面（organizr）">
+    <meta property="og:description" content="玩转云桌面（organizr） - 为了安心写C#，就需要会的多点">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://woodwen.github.io/code/build-docker-organizr/">
+    <meta property="og:site_name" content="木头的小屋">
+    <meta property="og:type" content="article">
+
+    
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/code/build-docker-organizr/" rel="alternate" type="application/rss+xml" title="木头的小屋" />
+    <link href="/code/build-docker-organizr/" rel="feed" type="application/rss+xml" title="木头的小屋" />
+    
+
+    
+    <link rel="canonical" href="https://woodwen.github.io/code/build-docker-organizr/">
+    
+
+    <link rel="stylesheet" href="https://woodwen.github.io/theme.css">
+
+    
+
+    
+        
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="https://woodwen.github.io/page/about/">About</a></li>
+                
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        <img src="/base/head.jpeg" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        木头的小屋
+                    </a>
+                </h3>
+
+                
+                    <span class="subtitle">刷个牙，洗个脸，新的一天，又开始了！</span>
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://woodwen.github.io/code/build-docker-organizr/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://woodwen.github.io/code/build-docker-organizr/">
+            玩转云桌面（organizr）
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2023-03-23</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://woodwen.github.io/categories/build/">build</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://woodwen.github.io/author/woodwen/">woodwen</a>
+                
+            </span>
+        
+    </div>
+
+    
+        
+
+        <p>Organizr，绝不止是漂亮的导航页这么简单</p>
+<h2 id="介绍">介绍</h2>
+<h3 id="简介">简介</h3>
+<ul>
+<li>
+<p>Organizr，绝不止是漂亮的导航页这么简单</p>
+</li>
+<li>
+<p><a href="https://github.com/causefx/organizr">Organizr</a>是服务器应用程序的前端管理器。它可以将所有常用网站或媒体应用程序组织到一个仪表板中。只需将您喜欢的网站添加到 Organizr 中，它们就会在左侧显示为 标签。只需单击一下，即可在同一窗口中打开任何站点,当然还有很多其他的玩法。</p>
+</li>
+</ul>
+<h3 id="优势">优势</h3>
+<ul>
+<li>
+<p>安装方便，和Heimdall一样，Organizr的安装同样一个docker容器就能解决，安装后修改无需对代码进行操作。</p>
+</li>
+<li>
+<p>颜值漂亮，Heidmall导航页界面美观，可定制的内容也不少，但是Organizr与Heimdall比起来更胜一筹，页面效果更加出彩，可供定制的内容更多，Organizr预置了将近十套皮肤可供自由切换。</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>标签管理，可以将一类网址关联一个标签（就像放在一个文件夹里），一个网址也允许有多个标签（可以在不同的文件夹种都显示这一个网址），这个Organizr和Heimdall同样方便</p>
+</li>
+<li>
+<p>其它的多用户管理，丰富的应用支持，Organizr和Heimdall比起来都丝毫不落下风，并且最关键的地方是，Heimdall仅仅是一个导航页而已，除了能够让我们少记几个端口之外，其它功能几乎没有，而Organizr除了可以快速地根据预设标签打开应用之外，还可以很方便地就在主屏上进行应用操作，非常方便！</p>
+</li>
+</ul>
+<h2 id="安装">安装</h2>
+<ul>
+<li>Organizr的docker部署</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-docker" data-lang="docker">docker create <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  --name<span style="color:#f92672">=</span>organizr <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -v &lt;path to data&gt;:/config <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -e PGID<span style="color:#f92672">=</span>&lt;gid&gt; -e PUID<span style="color:#f92672">=</span>&lt;uid&gt;  <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -p 80:80 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -e fpm<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#ae81ff">\ </span><span style="color:#75715e"># optional</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  -e branch<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;v2-master&#34;</span> <span style="color:#ae81ff">\ </span><span style="color:#75715e"># optional</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  organizr/organizr<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><ul>
+<li>Organizr的docker-compose部署</li>
+</ul>
+<pre><code class="language-docker-compose" data-lang="docker-compose">version: &quot;3.6&quot;
+services:
+    organizr:
+        container_name: organizr
+        hostname: organizr
+        image: organizr/organizr:latest
+        restart: unless-stopped
+        ports:
+            - 80:80
+        volumes:
+            - &lt;path to data&gt;:/config
+        environment:
+            - PUID=&lt;uid&gt;
+            - PGID=&lt;gid&gt;
+            - TZ=&lt;timezone&gt;
+</code></pre><h2 id="开始">开始</h2>
+<ul>
+<li>设置语言
+<img src="/build-docker-organizr/1.png" alt=""></li>
+<li>选择个人版本并建立管理员用户名和密码
+<img src="/build-docker-organizr/2.png" alt=""></li>
+<li>安全部分输入Hash密码和注册密码，API密码是自动生成的，不需要管它，然后Next即可，之后设置资料库下一步便安装完成
+<img src="/build-docker-organizr/3.png" alt=""></li>
+</ul>
+<h2 id="使用">使用</h2>
+<ul>
+<li>添加新标签，这里我们选择jellyfin，图标容器有自带得，这里直接选择jellyfin即可，标签URL即为你jellyfin得地址。这里设置好后我们还需要点一下生效才会显示
+<img src="/build-docker-organizr/4.png" alt=""></li>
+<li>新标签之后在主界面得左边便会显示jellyfin得信息了，值得一提得是他这个不需要跳转，而是通过iFrame镶嵌得形式得到页面，当然你在新建标签页时也可以直接选择新的窗口。
+<img src="/build-docker-organizr/5.png" alt=""></li>
+<li>除了上面得方式，你还可以通过api来添加jellyfin，这样也可以直接在导航页界面显示jellyfin得内容，实现不跳转。
+<img src="/build-docker-organizr/6.png" alt=""></li>
+<li>当然除了以上功能，你还可以定制css来美化你的主界面以及各个子界面。也可以通过插件市场实现更多功能，就这就需要你自己去发掘了。
+<img src="/build-docker-organizr/7.png" alt=""></li>
+</ul>
+<h2 id="深入">深入</h2>
+<p><a href="https://docs.organizr.app/installation/prerequisites">自己乖乖看文档吧</a></p>
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/build/">build</a>
+                    
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/docker/">docker</a>
+                    
+                
+                    
+                    
+                    <a href="https://woodwen.github.io/tags/organizr/">organizr</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+    <script defer src="https://commento.lednerb.de/js/commento.js"></script>
+    <div id="commento"></div>
+
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/build-docker-organizr/">玩转云桌面（organizr）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/flutter-fvm/">Flutter fvm</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/build-github-vscode-picgo/">Github搭建图床</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/build-ubuntu-docker-jellyfin/">ubuntu下docker安装jellyfin</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/flutter-plugin/">Flutter 常用插件</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/build-docker-nextcloud-onlyoffice-postgres-nginx/">使用docker-compose部署Nextcloud和Onlyoffice组合包(包含nginx&#43;ssl&#43;postgres&#43;redis)</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://woodwen.github.io/code/build-hugo-githubpages-blog/">使用Hugo&#43;GithubPages搭建博客</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/build">Build
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/flutter">Flutter
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/android">Android
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/jellyfin">Jellyfin
+                        (1)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/%E6%B2%B9%E7%8C%B4">油猴
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/woodwen" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/woodwen" target="_blank">
+                &copy;
+                
+                2021
+                
+                by woodwen
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://woodwen.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+</body>
+
+</html>
