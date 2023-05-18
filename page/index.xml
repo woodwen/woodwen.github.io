@@ -5,7 +5,7 @@
     <link>https://woodwen.github.io/page/</link>
     <description>Recent content in Pages on 木头的小屋</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 21 May 2021 15:07:43 +0800</lastBuildDate><atom:link href="https://woodwen.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Nov 2021 13:17:56 +0100</lastBuildDate><atom:link href="https://woodwen.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://woodwen.github.io/page/about/</link>
@@ -13,6 +13,15 @@
       
       <guid>https://woodwen.github.io/page/about/</guid>
       <description>这货很懒，没仔细去写关于页面..</description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://woodwen.github.io/page/github/</link>
+      <pubDate>Mon, 01 Nov 2021 13:17:56 +0100</pubDate>
+      
+      <guid>https://woodwen.github.io/page/github/</guid>
+      <description></description>
     </item>
     
   </channel>
