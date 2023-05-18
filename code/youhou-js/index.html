@@ -1,7 +1,8 @@
+<!DOCTYPE html>
+
 
   
-<!doctype html>
-<html class="no-js" lang="en">
+<html itemscope itemtype="https://schema.org/WebPage" class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -9,8 +10,8 @@
     <meta name="siteBaseUrl" content="https://woodwen.github.io">
     <meta name="author" content="woodwen">
     <meta name="description" content="为了安心写C#，就需要会的多点">
-    <meta name="keywords" content="C#, Kotlin ,python ,js ,Go语言(golang),winform , android ,小程序 ,逆向 ,软件架构, docker, k8s, 垃圾佬">
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="keywords" content="C#,Flutter, Kotlin ,python ,js ,Go语言(golang),winform , android ,小程序 ,逆向 ,软件架构, docker, k8s, 垃圾佬">
+    <meta name="generator" content="Hugo 0.111.3">
     <title>
         
            
@@ -18,31 +19,27 @@
            
         
     </title>
-    <meta name="description" content="油猴入门 - 为了安心写C#，就需要会的多点">
     <meta itemprop="name" content="油猴入门">
     <meta itemprop="description" content="油猴入门 - 为了安心写C#，就需要会的多点">
-    <meta property="og:title" content="油猴入门">
-    <meta property="og:description" content="油猴入门 - 为了安心写C#，就需要会的多点">
-    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://woodwen.github.io/code/youhou-js/">
     <meta property="og:site_name" content="木头的小屋">
-    <meta property="og:type" content="article">
+
+    <meta property="og:title" content="油猴入门" />
+<meta property="og:description" content="油猴（Tampermonkey）是一款浏览器扩展，它允许用户编写和运行自定义脚本来修改网页的行为和样式。油猴最初是为谷歌浏览器开发的，但现在也支持其他浏览器，例如火狐浏览器、Safari和微软边缘等。
+用户可以使用油猴来自定义网页，例如在网页中添加自己的功能、过滤网页中的广告、修改网页的布局、增加快捷方式等。通过使用 JavaScript 编写自己的脚本，用户可以在网页上添加交互性的元素，例如按钮、下拉菜单、弹出窗口等。
+油猴还支持用户自定义脚本的存储和同步，这意味着用户可以在不同设备上使用相同的脚本，并确保它们保持同步和最新。油猴还提供了一个脚本库，用户可以在其中找到和安装其他人编写的脚本，并在自己的网页中使用。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://woodwen.github.io/code/youhou-js/" /><meta property="article:section" content="code" />
+<meta property="article:published_time" content="2023-03-24T11:55:25+08:00" />
+<meta property="article:modified_time" content="2023-03-24T11:55:25+08:00" />
+
 
     
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+
 
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/code/youhou-js/" rel="alternate" type="application/rss+xml" title="木头的小屋" />
-    <link href="/code/youhou-js/" rel="feed" type="application/rss+xml" title="木头的小屋" />
-    
+
 
     
     <link rel="canonical" href="https://woodwen.github.io/code/youhou-js/">
@@ -55,9 +52,12 @@
     
         
     
+
+    
 </head>
 
 <body class="bilberry-hugo-theme">
+    
 
     
     <nav>
@@ -79,37 +79,37 @@
     
     <header>
 
-        <div class="container">
-            <div class="logo">
-                <a href="/" class="logo">
-                    
-                        <img src="/base/head.jpeg" alt="">
-                    
+    <div class="container">
+        <div class="logo">
+            <a href="/" class="logo">
+                
+                    <img src="/base/head.jpeg" alt="">
+                
 
-                    <span class="overlay"><i class="fa fa-home"></i></span>
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title">
+                <a href="/">
+                    木头的小屋
                 </a>
-            </div>
-            <div class="titles">
-                <h3 class="title">
-                    <a href="/">
-                        木头的小屋
-                    </a>
-                </h3>
-
-                
-                    <span class="subtitle">刷个牙，洗个脸，新的一天，又开始了！</span>
-                
-            </div>
+            </h3>
 
             
+                <span class="subtitle">刷个牙，洗个脸，新的一天，又开始了！</span>
+            
+        </div>
 
-            
-                <div class="toggler">
-            
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>
+        
+
+        
+            <div class="toggler">
+        
+                <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
-    </header>
+    </div>
+</header>
 
 
     <div class="main container">
@@ -213,33 +213,33 @@
 <p>最下面参考资料中有脚本地址</p>
 <h2 id="自己写油猴demo">自己写油猴demo</h2>
 <p>以下是一个简单的油猴脚本示例，它可以在百度搜索结果页面上添加一个按钮，点击后可以将搜索结果中的标题字体变成粗体。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// ==UserScript==
-</span><span style="color:#75715e">// @name         Baidu search bold titles
-</span><span style="color:#75715e">// @namespace    https://example.com/
-</span><span style="color:#75715e">// @version      1.0
-</span><span style="color:#75715e">// @description  Make Baidu search results titles bold with one click
-</span><span style="color:#75715e">// @author       Your name
-</span><span style="color:#75715e">// @match        https://www.baidu.com/*
-</span><span style="color:#75715e">// @grant        none
-</span><span style="color:#75715e">// ==/UserScript==
-</span><span style="color:#75715e"></span>
-(<span style="color:#66d9ef">function</span>() {
-    <span style="color:#e6db74">&#39;use strict&#39;</span>;
-
-    <span style="color:#75715e">// 创建按钮元素并添加到页面
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">button</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;button&#39;</span>);
-    <span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Make titles bold&#39;</span>;
-    <span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
-        <span style="color:#75715e">// 获取所有搜索结果的标题元素
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">titles</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#39;.t&#39;</span>);
-        <span style="color:#75715e">// 循环遍历标题元素，并设置字体样式
-</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">titles</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">title</span>) {
-            <span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">fontWeight</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;bold&#39;</span>;
-        });
-    };
-    document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;content_left&#39;</span>).<span style="color:#a6e22e">prepend</span>(<span style="color:#a6e22e">button</span>);
-})();
-</code></pre></div><p>这个脚本通过添加一个按钮到页面上，并在按钮被点击时改变搜索结果中标题的字体样式，实现了简单的定制功能。该脚本可以通过将其保存为 .user.js 文件并导入到油猴中来使用。请注意，该脚本只是一个示例，实际使用时需要根据具体的需求编写自己的脚本。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// ==UserScript==
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @name         Baidu search bold titles
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @namespace    https://example.com/
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @version      1.0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @description  Make Baidu search results titles bold with one click
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @author       Your name
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @match        https://www.baidu.com/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @grant        none
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// ==/UserScript==
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;use strict&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 创建按钮元素并添加到页面
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">button</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;button&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Make titles bold&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 获取所有搜索结果的标题元素
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">titles</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#39;.t&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 循环遍历标题元素，并设置字体样式
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">titles</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">title</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">fontWeight</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;bold&#39;</span>;
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>    document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;content_left&#39;</span>).<span style="color:#a6e22e">prepend</span>(<span style="color:#a6e22e">button</span>);
+</span></span><span style="display:flex;"><span>})();
+</span></span></code></pre></div><p>这个脚本通过添加一个按钮到页面上，并在按钮被点击时改变搜索结果中标题的字体样式，实现了简单的定制功能。该脚本可以通过将其保存为 .user.js 文件并导入到油猴中来使用。请注意，该脚本只是一个示例，实际使用时需要根据具体的需求编写自己的脚本。</p>
 <h2 id="局限性和挑战">局限性和挑战</h2>
 <p>油猴作为一个浏览器扩展，也存在一些局限性和挑战：</p>
 <p>安全性问题：由于油猴脚本运行在网页上，一些恶意脚本可能会泄漏用户信息、篡改页面内容、植入恶意广告等，因此需要用户谨慎选择和使用脚本，并及时更新油猴和脚本。</p>
@@ -302,6 +302,10 @@
     <div id="commento"></div>
 
 
+            
+
+            
+
         </div>
     
 
@@ -351,37 +355,46 @@
 
         
         <div class="categories">
-            <a href="/categories/"><strong>Categories</strong></a>
+            
+            <a href="https://woodwen.github.io/categories/"><strong>Categories</strong></a>
+            
+
             <ul>
                 
                 <li>
-                    <a href="/categories/build">Build
-                        (4)</a>
+                
+                    <a href="https://woodwen.github.io/categories/build/">build (4)</a>
+                
                 </li>
                 
                 <li>
-                    <a href="/categories/flutter">Flutter
-                        (2)</a>
+                
+                    <a href="https://woodwen.github.io/categories/flutter/">flutter (2)</a>
+                
                 </li>
                 
                 <li>
-                    <a href="/categories/%E9%9A%8F%E7%AC%94">随笔
-                        (2)</a>
+                
+                    <a href="https://woodwen.github.io/categories/%E9%9A%8F%E7%AC%94/">随笔 (2)</a>
+                
                 </li>
                 
                 <li>
-                    <a href="/categories/android">Android
-                        (1)</a>
+                
+                    <a href="https://woodwen.github.io/categories/android/">android (1)</a>
+                
                 </li>
                 
                 <li>
-                    <a href="/categories/jellyfin">Jellyfin
-                        (1)</a>
+                
+                    <a href="https://woodwen.github.io/categories/jellyfin/">jellyfin (1)</a>
+                
                 </li>
                 
                 <li>
-                    <a href="/categories/%E6%B2%B9%E7%8C%B4">油猴
-                        (1)</a>
+                
+                    <a href="https://woodwen.github.io/categories/%E6%B2%B9%E7%8C%B4/">油猴 (1)</a>
+                
                 </li>
                 
             </ul>
@@ -392,13 +405,18 @@
             
             <div class="external-profiles">
                 <strong>Social media</strong>
-
                 
-                <a href="https://github.com/woodwen" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/woodwen" target="_blank" rel=""><em class="fab fa-github"></em></a>
                 
             </div>
             
 
+            
+
+            
+            <div class="archive">
+                
+            </div>
             
         </div>
     </div>
@@ -411,7 +429,7 @@
             <a href="https://github.com/woodwen" target="_blank">
                 &copy;
                 
-                2021
+                2023
                 
                 by woodwen
             </a>
@@ -428,12 +446,13 @@
     
 
     
-
-
-    <script type="text/javascript" src="https://woodwen.github.io/theme.js"></script>
+    <script src="https://woodwen.github.io/theme.js"></script>
+    
 
     
     
+    
+
     
 
     

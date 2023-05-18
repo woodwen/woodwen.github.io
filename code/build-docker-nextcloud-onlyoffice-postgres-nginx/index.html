@@ -1,7 +1,8 @@
+<!DOCTYPE html>
+
 
   
-<!doctype html>
-<html class="no-js" lang="en">
+<html itemscope itemtype="https://schema.org/WebPage" class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -9,8 +10,8 @@
     <meta name="siteBaseUrl" content="https://woodwen.github.io">
     <meta name="author" content="woodwen">
     <meta name="description" content="为了安心写C#，就需要会的多点">
-    <meta name="keywords" content="C#, Kotlin ,python ,js ,Go语言(golang),winform , android ,小程序 ,逆向 ,软件架构, docker, k8s, 垃圾佬">
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="keywords" content="C#,Flutter, Kotlin ,python ,js ,Go语言(golang),winform , android ,小程序 ,逆向 ,软件架构, docker, k8s, 垃圾佬">
+    <meta name="generator" content="Hugo 0.111.3">
     <title>
         
            
@@ -18,31 +19,28 @@
            
         
     </title>
-    <meta name="description" content="使用docker-compose部署Nextcloud和Onlyoffice组合包(包含nginx&#43;ssl&#43;postgres&#43;redis) - 为了安心写C#，就需要会的多点">
     <meta itemprop="name" content="使用docker-compose部署Nextcloud和Onlyoffice组合包(包含nginx&#43;ssl&#43;postgres&#43;redis)">
     <meta itemprop="description" content="使用docker-compose部署Nextcloud和Onlyoffice组合包(包含nginx&#43;ssl&#43;postgres&#43;redis) - 为了安心写C#，就需要会的多点">
-    <meta property="og:title" content="使用docker-compose部署Nextcloud和Onlyoffice组合包(包含nginx&#43;ssl&#43;postgres&#43;redis)">
-    <meta property="og:description" content="使用docker-compose部署Nextcloud和Onlyoffice组合包(包含nginx&#43;ssl&#43;postgres&#43;redis) - 为了安心写C#，就需要会的多点">
-    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://woodwen.github.io/code/build-docker-nextcloud-onlyoffice-postgres-nginx/">
     <meta property="og:site_name" content="木头的小屋">
-    <meta property="og:type" content="article">
+
+    <meta property="og:title" content="使用docker-compose部署Nextcloud和Onlyoffice组合包(包含nginx&#43;ssl&#43;postgres&#43;redis)" />
+<meta property="og:description" content="使用docker-compose部署Nextcloud和Onlyoffice组合包 可快速免费建立个人网盘。
+Nextcloud是一个私人网盘，使用PHP语言编写，是owncloud的一个分支，可以共享和协作处理文档、发送和接收电子邮件、管理您的日历以及进行视频聊天而不会泄露数据，上传下载可以达到硬盘满速，还具有简单、易用，高效，易扩展、快速部署等特点，不止网页可以访问，还同时拥有配套的客户端（windows，mac，安卓，ios）。作为完全内部部署的解决方案，Nextcloud Hub 提供在线协作的好处，而没有合规性和安全风险
+ONLYOFFICE安全的办公室和生产力应用（社区版，手机端（手机useragent）不能编辑）
+Nextcloud 插件 因为和谐原因，一般我们选用下载后安装模式，而不是内部安装。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://woodwen.github.io/code/build-docker-nextcloud-onlyoffice-postgres-nginx/" /><meta property="article:section" content="code" />
+<meta property="article:published_time" content="2021-07-06T14:59:02+08:00" />
+<meta property="article:modified_time" content="2021-07-06T14:59:02+08:00" />
+
 
     
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+
 
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/code/build-docker-nextcloud-onlyoffice-postgres-nginx/" rel="alternate" type="application/rss+xml" title="木头的小屋" />
-    <link href="/code/build-docker-nextcloud-onlyoffice-postgres-nginx/" rel="feed" type="application/rss+xml" title="木头的小屋" />
-    
+
 
     
     <link rel="canonical" href="https://woodwen.github.io/code/build-docker-nextcloud-onlyoffice-postgres-nginx/">
@@ -55,9 +53,12 @@
     
         
     
+
+    
 </head>
 
 <body class="bilberry-hugo-theme">
+    
 
     
     <nav>
@@ -79,37 +80,37 @@
     
     <header>
 
-        <div class="container">
-            <div class="logo">
-                <a href="/" class="logo">
-                    
-                        <img src="/base/head.jpeg" alt="">
-                    
+    <div class="container">
+        <div class="logo">
+            <a href="/" class="logo">
+                
+                    <img src="/base/head.jpeg" alt="">
+                
 
-                    <span class="overlay"><i class="fa fa-home"></i></span>
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title">
+                <a href="/">
+                    木头的小屋
                 </a>
-            </div>
-            <div class="titles">
-                <h3 class="title">
-                    <a href="/">
-                        木头的小屋
-                    </a>
-                </h3>
-
-                
-                    <span class="subtitle">刷个牙，洗个脸，新的一天，又开始了！</span>
-                
-            </div>
+            </h3>
 
             
+                <span class="subtitle">刷个牙，洗个脸，新的一天，又开始了！</span>
+            
+        </div>
 
-            
-                <div class="toggler">
-            
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>
+        
+
+        
+            <div class="toggler">
+        
+                <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
-    </header>
+    </div>
+</header>
 
 
     <div class="main container">
@@ -179,66 +180,65 @@
 </li>
 <li>
 <h1 id="docker国内镜像加速">docker国内镜像加速：</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 创建或修改 /etc/docker/daemon.json 文件</span>
-$ sudo vim /etc/docker/daemon.json
-
-<span style="color:#f92672">{</span>
-<span style="color:#e6db74">&#34;registry-mirrors&#34;</span>: <span style="color:#f92672">[</span>
-    <span style="color:#e6db74">&#34;https://registry.docker-cn.com&#34;</span>,
-    <span style="color:#e6db74">&#34;http://hub-mirror.c.163.com&#34;</span>,
-    <span style="color:#e6db74">&#34;https://docker.mirrors.ustc.edu.cn&#34;</span>
-    <span style="color:#f92672">]</span>
-<span style="color:#f92672">}</span>
-
-<span style="color:#75715e"># 加载重启docker</span>
-$ sudo systemctl daemon-reload
-$ sudo systemctl restart docker
-
-<span style="color:#75715e"># 查看是否成功（查看最底下，Registry Mirrors）</span>
-$ docker info
-
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 创建或修改 /etc/docker/daemon.json 文件</span>
+</span></span><span style="display:flex;"><span>$ sudo vim /etc/docker/daemon.json
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;registry-mirrors&#34;</span>: <span style="color:#f92672">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;https://registry.docker-cn.com&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;http://hub-mirror.c.163.com&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;https://docker.mirrors.ustc.edu.cn&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 加载重启docker</span>
+</span></span><span style="display:flex;"><span>$ sudo systemctl daemon-reload
+</span></span><span style="display:flex;"><span>$ sudo systemctl restart docker
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 查看是否成功（查看最底下，Registry Mirrors）</span>
+</span></span><span style="display:flex;"><span>$ docker info
+</span></span></code></pre></div></li>
 <li>
 <h1 id="安装portainer方便管理docker">安装portainer（方便管理docker）：</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  docker run -d -p 9898:9000 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>      --restart<span style="color:#f92672">=</span>always <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>      -v /var/run/docker.sock:/var/run/docker.sock <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>      --name prtainer <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>      portainer/portainer
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  docker run -d -p 9898:9000 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>      --restart<span style="color:#f92672">=</span>always <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>      -v /var/run/docker.sock:/var/run/docker.sock <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>      --name prtainer <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>      portainer/portainer
+</span></span></code></pre></div></li>
 <li>
 <h1 id="下载需要的镜像">下载需要的镜像：</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  <span style="color:#75715e"># nginx</span>
-  docker pull nginx
-  <span style="color:#75715e"># postgres</span>
-  docker pull postgres:12
-  <span style="color:#75715e"># onlyoffice</span>
-  docker pull onlyoffice/documentserver:latest
-  <span style="color:#75715e"># nextcloud</span>
-  docker pull nextcloud:fpm
-  <span style="color:#75715e"># redis</span>
-  docker pull redis:alpine
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  <span style="color:#75715e"># nginx</span>
+</span></span><span style="display:flex;"><span>  docker pull nginx
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># postgres</span>
+</span></span><span style="display:flex;"><span>  docker pull postgres:12
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># onlyoffice</span>
+</span></span><span style="display:flex;"><span>  docker pull onlyoffice/documentserver:latest
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># nextcloud</span>
+</span></span><span style="display:flex;"><span>  docker pull nextcloud:fpm
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># redis</span>
+</span></span><span style="display:flex;"><span>  docker pull redis:alpine
+</span></span></code></pre></div></li>
 <li>
 <h1 id="网站签名证书">网站签名证书</h1>
 <ul>
 <li>自签名证书（或者用现成的也可以）</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  <span style="color:#75715e"># 生成证书：</span>
-  <span style="color:#75715e"># 创建私钥</span>
-  openssl genrsa -out onlyoffice.key <span style="color:#ae81ff">2048</span>
-  <span style="color:#75715e"># 创建CSR</span>
-  openssl req -new -key onlyoffice.key -out onlyoffice.csr
-  <span style="color:#75715e"># 用私枂和CSR签发证书</span>
-  openssl x509 -req -days <span style="color:#ae81ff">365</span> -in onlyoffice.csr -signkey onlyoffice.key -out onlyoffice.crt
-  <span style="color:#75715e"># 用dhparam加密服务器密钥</span>
-  openssl dhparam -out dhparam.pem <span style="color:#ae81ff">2048</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  <span style="color:#75715e"># 生成证书：</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 创建私钥</span>
+</span></span><span style="display:flex;"><span>  openssl genrsa -out onlyoffice.key <span style="color:#ae81ff">2048</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 创建CSR</span>
+</span></span><span style="display:flex;"><span>  openssl req -new -key onlyoffice.key -out onlyoffice.csr
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 用私枂和CSR签发证书</span>
+</span></span><span style="display:flex;"><span>  openssl x509 -req -days <span style="color:#ae81ff">365</span> -in onlyoffice.csr -signkey onlyoffice.key -out onlyoffice.crt
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 用dhparam加密服务器密钥</span>
+</span></span><span style="display:flex;"><span>  openssl dhparam -out dhparam.pem <span style="color:#ae81ff">2048</span>
+</span></span></code></pre></div><ul>
 <li>key和crt证书文件转pem格式</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  openssl x509 -in SSLcertificate.crt  -out fullchain.pem
-  openssl rsa -in SSLprivatekey.key -out privkey.pem
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  openssl x509 -in SSLcertificate.crt  -out fullchain.pem
+</span></span><span style="display:flex;"><span>  openssl rsa -in SSLprivatekey.key -out privkey.pem
+</span></span></code></pre></div></li>
 <li>
 <h1 id="在ubuntu根目录新建一个文件夹-mydata">在ubuntu根目录新建一个文件夹 mydata</h1>
 <ul>
@@ -285,402 +285,400 @@ $ docker info
 <h3 id="在nextcloud目录下新建一个nginx文件夹用以存放nginx配置">在nextcloud目录下新建一个nginx文件夹用以存放nginx配置</h3>
 <ul>
 <li>新建 nginx.conf 文件
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nginx" data-lang="nginx">    <span style="color:#75715e"># nginx.conf
-</span><span style="color:#75715e"></span>
-    <span style="color:#66d9ef">user</span>  <span style="color:#e6db74">www-data</span>;
-    <span style="color:#66d9ef">worker_processes</span>  <span style="color:#ae81ff">1</span>;
-
-    <span style="color:#66d9ef">error_log</span>  <span style="color:#e6db74">/var/log/nginx/error.log</span> <span style="color:#e6db74">warn</span>;
-    <span style="color:#66d9ef">pid</span>        <span style="color:#e6db74">/var/run/nginx.pid</span>;
-
-    <span style="color:#66d9ef">events</span> {
-        <span style="color:#f92672">worker_connections</span>  <span style="color:#ae81ff">1024</span>;
-    }
-
-    <span style="color:#66d9ef">http</span> {
-
-        <span style="color:#f92672">upstream</span> <span style="color:#e6db74">backend</span> {
-            <span style="color:#f92672">server</span> app-server:<span style="color:#ae81ff">9000</span>;
-        }
-
-
-        <span style="color:#f92672">include</span>       <span style="color:#e6db74">/etc/nginx/mime.types</span>;
-        <span style="color:#f92672">default_type</span>  <span style="color:#e6db74">application/octet-stream</span>;
-
-        <span style="color:#f92672">log_format</span>  <span style="color:#e6db74">main</span>  <span style="color:#e6db74">&#39;</span>$remote_addr <span style="color:#e6db74">-</span> $remote_user <span style="color:#e6db74">[</span>$time_local] <span style="color:#e6db74">&#34;</span>$request&#34; <span style="color:#e6db74">&#39;</span>
-                        <span style="color:#e6db74">&#39;</span>$status $body_bytes_sent <span style="color:#e6db74">&#34;</span>$http_referer&#34; <span style="color:#e6db74">&#39;</span>
-                        <span style="color:#e6db74">&#39;&#34;</span>$http_user_agent&#34; <span style="color:#e6db74">&#34;</span>$http_x_forwarded_for&#34;&#39;;
-
-        <span style="color:#f92672">access_log</span>  <span style="color:#e6db74">/var/log/nginx/access.log</span>  <span style="color:#e6db74">main</span>;
-
-        <span style="color:#f92672">sendfile</span>        <span style="color:#66d9ef">on</span>;
-        <span style="color:#75715e">#tcp_nopush     on;
-</span><span style="color:#75715e"></span>
-        <span style="color:#f92672">keepalive_timeout</span>  <span style="color:#ae81ff">65</span>;
-
-        <span style="color:#f92672">map</span> $http_host $this_host {
-            <span style="color:#f92672">&#34;&#34;</span> $host;
-            <span style="color:#f92672">default</span> $http_host;
-        }
-
-        <span style="color:#f92672">map</span> $http_x_forwarded_proto $the_scheme {
-            <span style="color:#f92672">default</span> $http_x_forwarded_proto;
-            <span style="color:#f92672">&#34;&#34;</span> $scheme;
-        }
-
-        <span style="color:#f92672">map</span> $http_x_forwarded_host $the_host {
-            <span style="color:#f92672">default</span> $http_x_forwarded_host;
-            <span style="color:#f92672">&#34;&#34;</span> $this_host;
-        }
-
-        <span style="color:#f92672">server</span> {
-            <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
-
-            <span style="color:#f92672">include</span> <span style="color:#e6db74">/etc/nginx/common.conf</span>;
-        }
-    }
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span>    <span style="color:#75715e"># nginx.conf
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">user</span>  <span style="color:#e6db74">www-data</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">worker_processes</span>  <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">error_log</span>  <span style="color:#e6db74">/var/log/nginx/error.log</span> <span style="color:#e6db74">warn</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pid</span>        <span style="color:#e6db74">/var/run/nginx.pid</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">worker_connections</span>  <span style="color:#ae81ff">1024</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">http</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">upstream</span> <span style="color:#e6db74">backend</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">server</span> app-server:<span style="color:#ae81ff">9000</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">include</span>       <span style="color:#e6db74">/etc/nginx/mime.types</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">default_type</span>  <span style="color:#e6db74">application/octet-stream</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">log_format</span>  <span style="color:#e6db74">main</span>  <span style="color:#e6db74">&#39;</span>$remote_addr <span style="color:#e6db74">-</span> $remote_user <span style="color:#e6db74">[</span>$time_local] <span style="color:#e6db74">&#34;</span>$request&#34; <span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#39;</span>$status $body_bytes_sent <span style="color:#e6db74">&#34;</span>$http_referer&#34; <span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#39;&#34;</span>$http_user_agent&#34; <span style="color:#e6db74">&#34;</span>$http_x_forwarded_for&#34;&#39;;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">access_log</span>  <span style="color:#e6db74">/var/log/nginx/access.log</span>  <span style="color:#e6db74">main</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">sendfile</span>        <span style="color:#66d9ef">on</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#tcp_nopush     on;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">keepalive_timeout</span>  <span style="color:#ae81ff">65</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">map</span> $http_host $this_host {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;&#34;</span> $host;
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">default</span> $http_host;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">map</span> $http_x_forwarded_proto $the_scheme {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">default</span> $http_x_forwarded_proto;
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;&#34;</span> $scheme;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">map</span> $http_x_forwarded_host $the_host {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">default</span> $http_x_forwarded_host;
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;&#34;</span> $this_host;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">server</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">include</span> <span style="color:#e6db74">/etc/nginx/common.conf</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div></li>
 <li>新建 common.conf 文件
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nginx" data-lang="nginx"><span style="color:#75715e"># common.conf
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e"># Add headers to serve security related headers
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">Strict-Transport-Security</span> <span style="color:#e6db74">&#34;max-age=15768000</span>; <span style="color:#66d9ef">includeSubDomains</span>; <span style="color:#66d9ef">preload</span>;<span style="color:#66d9ef">&#34;</span>;
-<span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">X-Content-Type-Options</span> <span style="color:#e6db74">nosniff</span>;
-<span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">X-XSS-Protection</span> <span style="color:#e6db74">&#34;1</span>; <span style="color:#66d9ef">mode=block&#34;</span>;
-<span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">X-Robots-Tag</span> <span style="color:#e6db74">none</span>;
-<span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">X-Download-Options</span> <span style="color:#e6db74">noopen</span>;
-<span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">X-Permitted-Cross-Domain-Policies</span> <span style="color:#e6db74">none</span>;
-
-<span style="color:#66d9ef">root</span> <span style="color:#e6db74">/var/www/html</span>;
-<span style="color:#66d9ef">client_max_body_size</span> <span style="color:#e6db74">10G</span>; <span style="color:#75715e"># 0=unlimited - set max upload size
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">fastcgi_buffers</span> <span style="color:#ae81ff">64</span> <span style="color:#e6db74">4K</span>;
-
-<span style="color:#66d9ef">gzip</span> <span style="color:#66d9ef">off</span>;
-
-<span style="color:#66d9ef">index</span> <span style="color:#e6db74">index.php</span>;
-<span style="color:#66d9ef">error_page</span> <span style="color:#ae81ff">403</span> <span style="color:#e6db74">/core/templates/403.php</span>;
-<span style="color:#66d9ef">error_page</span> <span style="color:#ae81ff">404</span> <span style="color:#e6db74">/core/templates/404.php</span>;
-
-<span style="color:#66d9ef">rewrite</span> <span style="color:#e6db74">^/.well-known/carddav</span> <span style="color:#e6db74">/remote.php/dav/</span> <span style="color:#e6db74">permanent</span>;
-<span style="color:#66d9ef">rewrite</span> <span style="color:#e6db74">^/.well-known/caldav</span> <span style="color:#e6db74">/remote.php/dav/</span> <span style="color:#e6db74">permanent</span>;
-
-<span style="color:#66d9ef">location</span> = <span style="color:#e6db74">/robots.txt</span> {
-    <span style="color:#f92672">allow</span> <span style="color:#e6db74">all</span>;
-    <span style="color:#f92672">log_not_found</span> <span style="color:#66d9ef">off</span>;
-    <span style="color:#f92672">access_log</span> <span style="color:#66d9ef">off</span>;
-}
-
-<span style="color:#66d9ef">location</span> ~ <span style="color:#e6db74">^/(build|tests|config|lib|3rdparty|templates|data)/</span> {
-    <span style="color:#f92672">deny</span> <span style="color:#e6db74">all</span>;
-}
-
-<span style="color:#66d9ef">location</span> ~ <span style="color:#e6db74">^/(?:\.|autotest|occ|issue|indie|db_|console)</span> {
-    <span style="color:#f92672">deny</span> <span style="color:#e6db74">all</span>;
-}
-
-<span style="color:#66d9ef">location</span> <span style="color:#e6db74">/</span> {
-    <span style="color:#f92672">rewrite</span> <span style="color:#e6db74">^/remote/(.*)</span> <span style="color:#e6db74">/remote.php</span> <span style="color:#e6db74">last</span>;
-    <span style="color:#f92672">rewrite</span> <span style="color:#e6db74">^(/core/doc/[^\/]+/)</span>$ $1/index.html;
-    <span style="color:#f92672">try_files</span> $uri $uri/ =<span style="color:#ae81ff">404</span>;
-}
-
-<span style="color:#66d9ef">location</span> ~<span style="color:#e6db74">*</span> <span style="color:#e6db74">^/ds-vpath/</span> {
-    <span style="color:#f92672">rewrite</span> <span style="color:#e6db74">/ds-vpath/(.*)</span> <span style="color:#e6db74">/</span>$1  <span style="color:#e6db74">break</span>;
-    <span style="color:#f92672">proxy_pass</span> <span style="color:#e6db74">http://onlyoffice-document-server</span>;
-    <span style="color:#f92672">proxy_redirect</span>     <span style="color:#66d9ef">off</span>;
-
-    <span style="color:#f92672">client_max_body_size</span> <span style="color:#ae81ff">100m</span>;
-
-    <span style="color:#f92672">proxy_http_version</span> <span style="color:#ae81ff">1</span><span style="color:#e6db74">.1</span>;
-    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">Upgrade</span> $http_upgrade;
-    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">Connection</span> <span style="color:#e6db74">&#34;upgrade&#34;</span>;
-
-    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">Host</span> $http_host;
-    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Real-IP</span> $remote_addr;
-    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-For</span> $proxy_add_x_forwarded_for;
-    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-Host</span> $the_host/ds-vpath;
-    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-Proto</span> $the_scheme;
-}
-
-<span style="color:#66d9ef">location</span> ~ <span style="color:#e6db74">\.php(?:$|/)</span> {
-    <span style="color:#f92672">fastcgi_split_path_info</span> <span style="color:#e6db74">^(.+\.php)(/.+)</span>$;
-    <span style="color:#f92672">include</span> <span style="color:#e6db74">fastcgi_params</span>;
-    <span style="color:#f92672">fastcgi_param</span> <span style="color:#e6db74">SCRIPT_FILENAME</span> $document_root$fastcgi_script_name;
-    <span style="color:#f92672">fastcgi_param</span> <span style="color:#e6db74">PATH_INFO</span> $fastcgi_path_info;
-    <span style="color:#f92672">fastcgi_param</span> <span style="color:#e6db74">HTTPS</span> <span style="color:#66d9ef">off</span>;
-    <span style="color:#f92672">fastcgi_param</span> <span style="color:#e6db74">modHeadersAvailable</span> <span style="color:#e6db74">true</span>; <span style="color:#75715e">#Avoid sending the security headers twice
-</span><span style="color:#75715e"></span>    <span style="color:#f92672">fastcgi_pass</span> <span style="color:#e6db74">backend</span>;
-    <span style="color:#f92672">fastcgi_intercept_errors</span> <span style="color:#66d9ef">on</span>;
-}
-
-<span style="color:#75715e"># Adding the cache control header for js and css files
-</span><span style="color:#75715e"># Make sure it is BELOW the location ~ \.php(?:$|/) { block
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">location</span> ~<span style="color:#e6db74">*</span> <span style="color:#e6db74">\.(?:css|js)</span>$ {
-    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">Cache-Control</span> <span style="color:#e6db74">&#34;public,</span> <span style="color:#e6db74">max-age=7200&#34;</span>;
-    <span style="color:#75715e"># Add headers to serve security related headers
-</span><span style="color:#75715e"></span>    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">Strict-Transport-Security</span> <span style="color:#e6db74">&#34;max-age=15768000</span>; <span style="color:#f92672">includeSubDomains</span>; <span style="color:#f92672">preload</span>;<span style="color:#f92672">&#34;</span>;
-    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">X-Content-Type-Options</span> <span style="color:#e6db74">nosniff</span>;
-    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">X-Frame-Options</span> <span style="color:#e6db74">&#34;SAMEORIGIN&#34;</span>;
-    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">X-XSS-Protection</span> <span style="color:#e6db74">&#34;1</span>; <span style="color:#f92672">mode=block&#34;</span>;
-    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">X-Robots-Tag</span> <span style="color:#e6db74">none</span>;
-    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">X-Download-Options</span> <span style="color:#e6db74">noopen</span>;
-    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">X-Permitted-Cross-Domain-Policies</span> <span style="color:#e6db74">none</span>;
-    <span style="color:#75715e"># Optional: Don&#39;t log access to assets
-</span><span style="color:#75715e"></span>    <span style="color:#f92672">access_log</span> <span style="color:#66d9ef">off</span>;
-}
-
-<span style="color:#75715e"># Optional: Don&#39;t log access to other assets
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">location</span> ~<span style="color:#e6db74">*</span> <span style="color:#e6db74">\.(?:jpg|jpeg|gif|bmp|ico|png|swf)</span>$ {
-    <span style="color:#f92672">access_log</span> <span style="color:#66d9ef">off</span>;
-}
-
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#75715e"># common.conf
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Add headers to serve security related headers
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">Strict-Transport-Security</span> <span style="color:#e6db74">&#34;max-age=15768000</span>; <span style="color:#66d9ef">includeSubDomains</span>; <span style="color:#66d9ef">preload</span>;<span style="color:#66d9ef">&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">X-Content-Type-Options</span> <span style="color:#e6db74">nosniff</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">X-XSS-Protection</span> <span style="color:#e6db74">&#34;1</span>; <span style="color:#66d9ef">mode=block&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">X-Robots-Tag</span> <span style="color:#e6db74">none</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">X-Download-Options</span> <span style="color:#e6db74">noopen</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">X-Permitted-Cross-Domain-Policies</span> <span style="color:#e6db74">none</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">root</span> <span style="color:#e6db74">/var/www/html</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">client_max_body_size</span> <span style="color:#e6db74">10G</span>; <span style="color:#75715e"># 0=unlimited - set max upload size
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">fastcgi_buffers</span> <span style="color:#ae81ff">64</span> <span style="color:#e6db74">4K</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">gzip</span> <span style="color:#66d9ef">off</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">index</span> <span style="color:#e6db74">index.php</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">error_page</span> <span style="color:#ae81ff">403</span> <span style="color:#e6db74">/core/templates/403.php</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">error_page</span> <span style="color:#ae81ff">404</span> <span style="color:#e6db74">/core/templates/404.php</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">rewrite</span> <span style="color:#e6db74">^/.well-known/carddav</span> <span style="color:#e6db74">/remote.php/dav/</span> <span style="color:#e6db74">permanent</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">rewrite</span> <span style="color:#e6db74">^/.well-known/caldav</span> <span style="color:#e6db74">/remote.php/dav/</span> <span style="color:#e6db74">permanent</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">location</span> = <span style="color:#e6db74">/robots.txt</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">allow</span> <span style="color:#e6db74">all</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">log_not_found</span> <span style="color:#66d9ef">off</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">access_log</span> <span style="color:#66d9ef">off</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">location</span> ~ <span style="color:#e6db74">^/(build|tests|config|lib|3rdparty|templates|data)/</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">deny</span> <span style="color:#e6db74">all</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">location</span> ~ <span style="color:#e6db74">^/(?:\.|autotest|occ|issue|indie|db_|console)</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">deny</span> <span style="color:#e6db74">all</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">location</span> <span style="color:#e6db74">/</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">rewrite</span> <span style="color:#e6db74">^/remote/(.*)</span> <span style="color:#e6db74">/remote.php</span> <span style="color:#e6db74">last</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">rewrite</span> <span style="color:#e6db74">^(/core/doc/[^\/]+/)</span>$ $1/index.html;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">try_files</span> $uri $uri/ =<span style="color:#ae81ff">404</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">location</span> ~<span style="color:#e6db74">*</span> <span style="color:#e6db74">^/ds-vpath/</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">rewrite</span> <span style="color:#e6db74">/ds-vpath/(.*)</span> <span style="color:#e6db74">/</span>$1  <span style="color:#e6db74">break</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">proxy_pass</span> <span style="color:#e6db74">http://onlyoffice-document-server</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">proxy_redirect</span>     <span style="color:#66d9ef">off</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">client_max_body_size</span> <span style="color:#ae81ff">100m</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">proxy_http_version</span> <span style="color:#ae81ff">1</span><span style="color:#e6db74">.1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">Upgrade</span> $http_upgrade;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">Connection</span> <span style="color:#e6db74">&#34;upgrade&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">Host</span> $http_host;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Real-IP</span> $remote_addr;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-For</span> $proxy_add_x_forwarded_for;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-Host</span> $the_host/ds-vpath;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-Proto</span> $the_scheme;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">location</span> ~ <span style="color:#e6db74">\.php(?:$|/)</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">fastcgi_split_path_info</span> <span style="color:#e6db74">^(.+\.php)(/.+)</span>$;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">include</span> <span style="color:#e6db74">fastcgi_params</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">fastcgi_param</span> <span style="color:#e6db74">SCRIPT_FILENAME</span> $document_root$fastcgi_script_name;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">fastcgi_param</span> <span style="color:#e6db74">PATH_INFO</span> $fastcgi_path_info;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">fastcgi_param</span> <span style="color:#e6db74">HTTPS</span> <span style="color:#66d9ef">off</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">fastcgi_param</span> <span style="color:#e6db74">modHeadersAvailable</span> <span style="color:#e6db74">true</span>; <span style="color:#75715e">#Avoid sending the security headers twice
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">fastcgi_pass</span> <span style="color:#e6db74">backend</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">fastcgi_intercept_errors</span> <span style="color:#66d9ef">on</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Adding the cache control header for js and css files
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"># Make sure it is BELOW the location ~ \.php(?:$|/) { block
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">location</span> ~<span style="color:#e6db74">*</span> <span style="color:#e6db74">\.(?:css|js)</span>$ {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">Cache-Control</span> <span style="color:#e6db74">&#34;public,</span> <span style="color:#e6db74">max-age=7200&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Add headers to serve security related headers
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">Strict-Transport-Security</span> <span style="color:#e6db74">&#34;max-age=15768000</span>; <span style="color:#f92672">includeSubDomains</span>; <span style="color:#f92672">preload</span>;<span style="color:#f92672">&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">X-Content-Type-Options</span> <span style="color:#e6db74">nosniff</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">X-Frame-Options</span> <span style="color:#e6db74">&#34;SAMEORIGIN&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">X-XSS-Protection</span> <span style="color:#e6db74">&#34;1</span>; <span style="color:#f92672">mode=block&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">X-Robots-Tag</span> <span style="color:#e6db74">none</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">X-Download-Options</span> <span style="color:#e6db74">noopen</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">add_header</span> <span style="color:#e6db74">X-Permitted-Cross-Domain-Policies</span> <span style="color:#e6db74">none</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Optional: Don&#39;t log access to assets
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">access_log</span> <span style="color:#66d9ef">off</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Optional: Don&#39;t log access to other assets
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">location</span> ~<span style="color:#e6db74">*</span> <span style="color:#e6db74">\.(?:jpg|jpeg|gif|bmp|ico|png|swf)</span>$ {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">access_log</span> <span style="color:#66d9ef">off</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
 <li>新建 nginx-ssl.conf 文件
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nginx" data-lang="nginx"><span style="color:#75715e"># nginx-ssl.conf 文件
-</span><span style="color:#75715e"></span>
-    <span style="color:#66d9ef">user</span>  <span style="color:#e6db74">www-data</span>;
-    <span style="color:#66d9ef">worker_processes</span>  <span style="color:#ae81ff">1</span>;
-
-    <span style="color:#66d9ef">error_log</span>  <span style="color:#e6db74">/var/log/nginx/error.log</span> <span style="color:#e6db74">warn</span>;
-    <span style="color:#66d9ef">pid</span>        <span style="color:#e6db74">/var/run/nginx.pid</span>;
-
-    <span style="color:#66d9ef">events</span> {
-        <span style="color:#f92672">worker_connections</span>  <span style="color:#ae81ff">1024</span>;
-    }
-
-    <span style="color:#66d9ef">http</span> {
-
-        <span style="color:#f92672">upstream</span> <span style="color:#e6db74">backend</span> {
-            <span style="color:#f92672">server</span> app-server:<span style="color:#ae81ff">9000</span>;
-        }
-
-
-        <span style="color:#f92672">include</span>       <span style="color:#e6db74">/etc/nginx/mime.types</span>;
-        <span style="color:#f92672">default_type</span>  <span style="color:#e6db74">application/octet-stream</span>;
-
-        <span style="color:#f92672">log_format</span>  <span style="color:#e6db74">main</span>  <span style="color:#e6db74">&#39;</span>$remote_addr <span style="color:#e6db74">-</span> $remote_user <span style="color:#e6db74">[</span>$time_local] <span style="color:#e6db74">&#34;</span>$request&#34; <span style="color:#e6db74">&#39;</span>
-                        <span style="color:#e6db74">&#39;</span>$status $body_bytes_sent <span style="color:#e6db74">&#34;</span>$http_referer&#34; <span style="color:#e6db74">&#39;</span>
-                        <span style="color:#e6db74">&#39;&#34;</span>$http_user_agent&#34; <span style="color:#e6db74">&#34;</span>$http_x_forwarded_for&#34;&#39;;
-
-        <span style="color:#f92672">access_log</span>  <span style="color:#e6db74">/var/log/nginx/access.log</span>  <span style="color:#e6db74">main</span>;
-
-        <span style="color:#f92672">sendfile</span>        <span style="color:#66d9ef">on</span>;
-        <span style="color:#75715e">#tcp_nopush     on;
-</span><span style="color:#75715e"></span>
-        <span style="color:#f92672">keepalive_timeout</span>  <span style="color:#ae81ff">65</span>;
-
-        <span style="color:#f92672">map</span> $http_host $this_host {
-            <span style="color:#f92672">&#34;&#34;</span> $host;
-            <span style="color:#f92672">default</span> $http_host;
-        }
-
-        <span style="color:#f92672">map</span> $http_x_forwarded_proto $the_scheme {
-            <span style="color:#f92672">default</span> $http_x_forwarded_proto;
-            <span style="color:#f92672">&#34;&#34;</span> $scheme;
-        }
-
-        <span style="color:#f92672">map</span> $http_x_forwarded_host $the_host {
-            <span style="color:#f92672">default</span> $http_x_forwarded_host;
-            <span style="color:#f92672">&#34;&#34;</span> $this_host;
-        }
-
-        <span style="color:#f92672">server</span> {
-            <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
-
-            <span style="color:#f92672">location</span> <span style="color:#e6db74">/</span> {
-                <span style="color:#f92672">return</span> <span style="color:#ae81ff">301</span> <span style="color:#e6db74">https://</span>$host$request_uri;
-            }
-        }
-
-        <span style="color:#f92672">server</span> {
-            <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
-            <span style="color:#f92672">server_name</span> <span style="color:#e6db74">nginx-server</span>;
-
-            <span style="color:#f92672">include</span> <span style="color:#e6db74">/etc/nginx/common.conf</span>;
-        }
-
-        <span style="color:#f92672">server</span> {
-            <span style="color:#f92672">listen</span> <span style="color:#ae81ff">443</span> <span style="color:#e6db74">ssl</span>;
-
-            <span style="color:#f92672">ssl_certificate</span>     <span style="color:#e6db74">/etc/nginx/certs/fullchain.pem</span>;
-            <span style="color:#f92672">ssl_certificate_key</span> <span style="color:#e6db74">/etc/nginx/certs/privkey.pem</span>;
-            <span style="color:#f92672">ssl_protocols</span>       <span style="color:#e6db74">TLSv1</span> <span style="color:#e6db74">TLSv1.1</span> <span style="color:#e6db74">TLSv1.2</span>;
-            <span style="color:#f92672">ssl_ciphers</span>         <span style="color:#e6db74">HIGH:!aNULL:!MD5</span>;
-
-            <span style="color:#f92672">include</span> <span style="color:#e6db74">/etc/nginx/common.conf</span>;
-        }
-    }
-
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#75715e"># nginx-ssl.conf 文件
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">user</span>  <span style="color:#e6db74">www-data</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">worker_processes</span>  <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">error_log</span>  <span style="color:#e6db74">/var/log/nginx/error.log</span> <span style="color:#e6db74">warn</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pid</span>        <span style="color:#e6db74">/var/run/nginx.pid</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">worker_connections</span>  <span style="color:#ae81ff">1024</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">http</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">upstream</span> <span style="color:#e6db74">backend</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">server</span> app-server:<span style="color:#ae81ff">9000</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">include</span>       <span style="color:#e6db74">/etc/nginx/mime.types</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">default_type</span>  <span style="color:#e6db74">application/octet-stream</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">log_format</span>  <span style="color:#e6db74">main</span>  <span style="color:#e6db74">&#39;</span>$remote_addr <span style="color:#e6db74">-</span> $remote_user <span style="color:#e6db74">[</span>$time_local] <span style="color:#e6db74">&#34;</span>$request&#34; <span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#39;</span>$status $body_bytes_sent <span style="color:#e6db74">&#34;</span>$http_referer&#34; <span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#39;&#34;</span>$http_user_agent&#34; <span style="color:#e6db74">&#34;</span>$http_x_forwarded_for&#34;&#39;;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">access_log</span>  <span style="color:#e6db74">/var/log/nginx/access.log</span>  <span style="color:#e6db74">main</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">sendfile</span>        <span style="color:#66d9ef">on</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#tcp_nopush     on;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">keepalive_timeout</span>  <span style="color:#ae81ff">65</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">map</span> $http_host $this_host {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;&#34;</span> $host;
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">default</span> $http_host;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">map</span> $http_x_forwarded_proto $the_scheme {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">default</span> $http_x_forwarded_proto;
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;&#34;</span> $scheme;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">map</span> $http_x_forwarded_host $the_host {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">default</span> $http_x_forwarded_host;
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;&#34;</span> $this_host;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">server</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">location</span> <span style="color:#e6db74">/</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">return</span> <span style="color:#ae81ff">301</span> <span style="color:#e6db74">https://</span>$host$request_uri;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">server</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">server_name</span> <span style="color:#e6db74">nginx-server</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">include</span> <span style="color:#e6db74">/etc/nginx/common.conf</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">server</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">listen</span> <span style="color:#ae81ff">443</span> <span style="color:#e6db74">ssl</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">ssl_certificate</span>     <span style="color:#e6db74">/etc/nginx/certs/fullchain.pem</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">ssl_certificate_key</span> <span style="color:#e6db74">/etc/nginx/certs/privkey.pem</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">ssl_protocols</span>       <span style="color:#e6db74">TLSv1</span> <span style="color:#e6db74">TLSv1.1</span> <span style="color:#e6db74">TLSv1.2</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">ssl_ciphers</span>         <span style="color:#e6db74">HIGH:!aNULL:!MD5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">include</span> <span style="color:#e6db74">/etc/nginx/common.conf</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div></li>
 </ul>
 </li>
 <li>
 <h3 id="在nextcloud目录下新建一个sslyml文件">在nextcloud目录下新建一个ssl.yml文件</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">    <span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.9&#39;</span>
-    <span style="color:#f92672">services</span>:
-    <span style="color:#f92672">onlyoffice-document-server</span>:
-        <span style="color:#f92672">environment</span>:
-        - <span style="color:#ae81ff">USE_UNAUTHORIZED_STORAGE=true</span>
-    <span style="color:#f92672">nginx</span>:
-        <span style="color:#f92672">volumes</span>:
-        - <span style="color:#ae81ff">./certs:/etc/nginx/certs:ro</span>
-        - <span style="color:#ae81ff">./nginx/nginx-ssl.conf:/etc/nginx/nginx.conf:ro</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    <span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.9&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">onlyoffice-document-server</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">USE_UNAUTHORIZED_STORAGE=true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">nginx</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">./certs:/etc/nginx/certs:ro</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">./nginx/nginx-ssl.conf:/etc/nginx/nginx.conf:ro</span>
+</span></span></code></pre></div></li>
 <li>
 <h3 id="在nextcloud目录下新建一个docker-composeyml-文件">在nextcloud目录下新建一个docker-compose.yml 文件</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">    <span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.9&#39;</span>
-    <span style="color:#f92672">services</span>:
-    <span style="color:#f92672">db</span>:
-        <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">db-server</span>
-        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">postgres:12</span>
-        <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
-        <span style="color:#f92672">volumes</span>:
-        - <span style="color:#ae81ff">./db:/var/lib/postgresql/data</span>
-        <span style="color:#f92672">environment</span>:
-        - <span style="color:#ae81ff">POSTGRES_DB_FILE=/run/secrets/postgres_db</span>
-        - <span style="color:#ae81ff">POSTGRES_USER_FILE=/run/secrets/postgres_user</span>
-        - <span style="color:#ae81ff">POSTGRES_PASSWORD_FILE=/run/secrets/postgres_password</span>
-        <span style="color:#f92672">secrets</span>:
-        - <span style="color:#ae81ff">postgres_db</span>
-        - <span style="color:#ae81ff">postgres_password</span>
-        - <span style="color:#ae81ff">postgres_user</span>
-
-    <span style="color:#f92672">cache</span>:
-        <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">cache-server</span>
-        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">redis:alpine</span>
-        <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
-        <span style="color:#f92672">expose</span>:
-        - <span style="color:#ae81ff">6379</span>
-        <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
-
-    <span style="color:#f92672">app</span>:
-        <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">app-server</span>
-        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">nextcloud:fpm</span>
-        <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
-        <span style="color:#f92672">expose</span>:
-        - <span style="color:#e6db74">&#39;80&#39;</span>
-        - <span style="color:#e6db74">&#39;9000&#39;</span>
-        <span style="color:#f92672">volumes</span>:
-        - <span style="color:#ae81ff">./app_data:/var/www/html</span>
-        <span style="color:#f92672">environment</span>:
-        - <span style="color:#ae81ff">REDIS_HOST=cache</span>
-        - <span style="color:#ae81ff">REDIS_HOST_PORT=6379</span>
-        - <span style="color:#ae81ff">POSTGRES_HOST=db</span>
-        - <span style="color:#ae81ff">POSTGRES_DB_FILE=/run/secrets/postgres_db</span>
-        - <span style="color:#ae81ff">POSTGRES_USER_FILE=/run/secrets/postgres_user</span>
-        - <span style="color:#ae81ff">POSTGRES_PASSWORD_FILE=/run/secrets/postgres_password</span>
-        - <span style="color:#ae81ff">NEXTCLOUD_ADMIN_PASSWORD_FILE=/run/secrets/nextcloud_admin_password</span>
-        - <span style="color:#ae81ff">NEXTCLOUD_ADMIN_USER_FILE=/run/secrets/nextcloud_admin_user</span>
-        <span style="color:#f92672">depends_on</span>:
-        - <span style="color:#ae81ff">db</span>
-        - <span style="color:#ae81ff">cache</span>
-        <span style="color:#f92672">secrets</span>:
-        - <span style="color:#ae81ff">nextcloud_admin_password</span>
-        - <span style="color:#ae81ff">nextcloud_admin_user</span>
-        - <span style="color:#ae81ff">postgres_db</span>
-        - <span style="color:#ae81ff">postgres_password</span>
-        - <span style="color:#ae81ff">postgres_user</span>
-
-    <span style="color:#f92672">onlyoffice-document-server</span>:
-        <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">onlyoffice-document-server</span>
-        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">onlyoffice/documentserver:latest</span>
-        <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
-        <span style="color:#f92672">expose</span>:
-        - <span style="color:#e6db74">&#39;80&#39;</span>
-        - <span style="color:#e6db74">&#39;443&#39;</span>
-        <span style="color:#f92672">volumes</span>:
-        - <span style="color:#ae81ff">./document_data:/var/www/onlyoffice/Data</span>
-        - <span style="color:#ae81ff">./document_log:/var/log/onlyoffice</span>
-        <span style="color:#f92672">environment</span>:
-        - <span style="color:#ae81ff">REDIS_SERVER_HOST=cache</span>
-        - <span style="color:#ae81ff">REDIS_SERVER_PORT=6379</span>
-        <span style="color:#f92672">depends_on</span>:
-        - <span style="color:#ae81ff">cache</span>
-
-    <span style="color:#f92672">nginx</span>:
-        <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">nginx-server</span>
-        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">nginx</span>
-        <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
-        <span style="color:#f92672">ports</span>:
-        - <span style="color:#ae81ff">80</span>:<span style="color:#ae81ff">80</span>
-        - <span style="color:#ae81ff">443</span>:<span style="color:#ae81ff">443</span>
-        <span style="color:#f92672">volumes</span>:
-        - <span style="color:#ae81ff">./nginx/nginx.conf:/etc/nginx/nginx.conf:ro</span>
-        - <span style="color:#ae81ff">./nginx/common.conf:/etc/nginx/common.conf:ro</span>
-        - <span style="color:#ae81ff">./app_data:/var/www/html</span>
-
-    <span style="color:#f92672">secrets</span>:
-    <span style="color:#f92672">nextcloud_admin_password</span>:
-        <span style="color:#f92672">file</span>: <span style="color:#ae81ff">/mydata/config/nextcloud_admin_password.txt</span>
-    <span style="color:#f92672">nextcloud_admin_user</span>:
-        <span style="color:#f92672">file</span>: <span style="color:#ae81ff">/mydata/config/nextcloud_admin_user.txt</span>
-    <span style="color:#f92672">postgres_db</span>:
-        <span style="color:#f92672">file</span>: <span style="color:#ae81ff">/mydata/config/postgres_db.txt</span>
-    <span style="color:#f92672">postgres_password</span>:
-        <span style="color:#f92672">file</span>: <span style="color:#ae81ff">/mydata/config/postgres_password.txt</span>
-    <span style="color:#f92672">postgres_user</span>:
-        <span style="color:#f92672">file</span>: <span style="color:#ae81ff">/mydata/config/postgres_user.txt    </span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    <span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3.9&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">db</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">db-server</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">postgres:12</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">./db:/var/lib/postgresql/data</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">POSTGRES_DB_FILE=/run/secrets/postgres_db</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">POSTGRES_USER_FILE=/run/secrets/postgres_user</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">POSTGRES_PASSWORD_FILE=/run/secrets/postgres_password</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">secrets</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">postgres_db</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">postgres_password</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">postgres_user</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">cache</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">cache-server</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">redis:alpine</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">expose</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">6379</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">app</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">app-server</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">nextcloud:fpm</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">expose</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#e6db74">&#39;80&#39;</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#e6db74">&#39;9000&#39;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">./app_data:/var/www/html</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">REDIS_HOST=cache</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">REDIS_HOST_PORT=6379</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">POSTGRES_HOST=db</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">POSTGRES_DB_FILE=/run/secrets/postgres_db</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">POSTGRES_USER_FILE=/run/secrets/postgres_user</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">POSTGRES_PASSWORD_FILE=/run/secrets/postgres_password</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">NEXTCLOUD_ADMIN_PASSWORD_FILE=/run/secrets/nextcloud_admin_password</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">NEXTCLOUD_ADMIN_USER_FILE=/run/secrets/nextcloud_admin_user</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">depends_on</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">db</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">cache</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">secrets</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">nextcloud_admin_password</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">nextcloud_admin_user</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">postgres_db</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">postgres_password</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">postgres_user</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">onlyoffice-document-server</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">onlyoffice-document-server</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">onlyoffice/documentserver:latest</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">expose</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#e6db74">&#39;80&#39;</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#e6db74">&#39;443&#39;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">./document_data:/var/www/onlyoffice/Data</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">./document_log:/var/log/onlyoffice</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">REDIS_SERVER_HOST=cache</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">REDIS_SERVER_PORT=6379</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">depends_on</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">cache</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">nginx</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">nginx-server</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">nginx</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">80</span>:<span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">443</span>:<span style="color:#ae81ff">443</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">./nginx/nginx.conf:/etc/nginx/nginx.conf:ro</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">./nginx/common.conf:/etc/nginx/common.conf:ro</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">./app_data:/var/www/html</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">secrets</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">nextcloud_admin_password</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">file</span>: <span style="color:#ae81ff">/mydata/config/nextcloud_admin_password.txt</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">nextcloud_admin_user</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">file</span>: <span style="color:#ae81ff">/mydata/config/nextcloud_admin_user.txt</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">postgres_db</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">file</span>: <span style="color:#ae81ff">/mydata/config/postgres_db.txt</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">postgres_password</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">file</span>: <span style="color:#ae81ff">/mydata/config/postgres_password.txt</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">postgres_user</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">file</span>: <span style="color:#ae81ff">/mydata/config/postgres_user.txt    </span>
+</span></span></code></pre></div></li>
 <li>
 <h3 id="在nextcloud目录下新建一个set_configurationsh-文件">在nextcloud目录下新建一个set_configuration.sh 文件</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#!/bin/bash
-</span><span style="color:#75715e"></span>
-set -x
-
-docker exec -u www-data app-server php occ --no-warnings config:system:get trusted_domains &gt;&gt; trusted_domain.tmp
-
-<span style="color:#66d9ef">if</span> ! grep -q <span style="color:#e6db74">&#34;nginx-server&#34;</span> trusted_domain.tmp; <span style="color:#66d9ef">then</span>
-    TRUSTED_INDEX<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>cat trusted_domain.tmp | wc -l<span style="color:#66d9ef">)</span>;
-    docker exec -u www-data app-server php occ --no-warnings config:system:set trusted_domains $TRUSTED_INDEX --value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nginx-server&#34;</span>
-<span style="color:#66d9ef">fi</span>
-
-rm trusted_domain.tmp
-
-docker exec -u www-data app-server php occ --no-warnings app:install onlyoffice
-
-docker exec -u www-data app-server php occ --no-warnings config:system:set onlyoffice DocumentServerUrl --value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/ds-vpath/&#34;</span>
-docker exec -u www-data app-server php occ --no-warnings config:system:set onlyoffice DocumentServerInternalUrl --value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://onlyoffice-document-server/&#34;</span>
-docker exec -u www-data app-server php occ --no-warnings config:system:set onlyoffice StorageUrl --value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://nginx-server/&#34;</span>
-
-docker exec -u www-data app-server php occ --no-warnings config:system:set allow_local_remote_servers  --value<span style="color:#f92672">=</span>true
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>set -x
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker exec -u www-data app-server php occ --no-warnings config:system:get trusted_domains &gt;&gt; trusted_domain.tmp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ! grep -q <span style="color:#e6db74">&#34;nginx-server&#34;</span> trusted_domain.tmp; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    TRUSTED_INDEX<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>cat trusted_domain.tmp | wc -l<span style="color:#66d9ef">)</span>;
+</span></span><span style="display:flex;"><span>    docker exec -u www-data app-server php occ --no-warnings config:system:set trusted_domains $TRUSTED_INDEX --value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nginx-server&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rm trusted_domain.tmp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker exec -u www-data app-server php occ --no-warnings app:install onlyoffice
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker exec -u www-data app-server php occ --no-warnings config:system:set onlyoffice DocumentServerUrl --value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/ds-vpath/&#34;</span>
+</span></span><span style="display:flex;"><span>docker exec -u www-data app-server php occ --no-warnings config:system:set onlyoffice DocumentServerInternalUrl --value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://onlyoffice-document-server/&#34;</span>
+</span></span><span style="display:flex;"><span>docker exec -u www-data app-server php occ --no-warnings config:system:set onlyoffice StorageUrl --value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://nginx-server/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker exec -u www-data app-server php occ --no-warnings config:system:set allow_local_remote_servers  --value<span style="color:#f92672">=</span>true
+</span></span></code></pre></div></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
 <h1 id="准备工作完成开干敲命令">准备工作完成，开干(敲命令)</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    <span style="color:#75715e"># 定位到程序目录</span>
-    cd /mydata/nextcloud
-
-    <span style="color:#75715e"># 启动程序</span>
-    docker-compose -f docker-compose.yml -f ssl.yml up -d
-
-    <span style="color:#75715e"># 运行脚本前先看下是不是程序能跑了，能跑了 再运行脚本，脚本主要是用来串联，nextcloud和onlyoffice</span>
-
-    bash set_configuration.sh
-
-    <span style="color:#75715e"># 修改下程序的配置,用来应对域名访问问题,以及https 没有自动跳转的问题</span>
-    ./nextcloud/app_data/config/config.php
-
-    <span style="color:#75715e"># 修改为（新增局域网域名，和外网域名）</span>
-    <span style="color:#e6db74">&#39;trusted_domains&#39;</span> <span style="color:#f92672">=</span>&gt; 
-    array <span style="color:#f92672">(</span>
-        0 <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#39;localhost&#39;</span>,
-        1 <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#39;nginx-server&#39;</span>,
-        2 <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#39;192.168.x.x&#39;</span>,
-        3 <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#39;xxx.xxx.com&#39;</span>,  
-    <span style="color:#f92672">)</span>,
-
-    <span style="color:#75715e"># 新增</span>
-    <span style="color:#e6db74">&#39;overwriteprotocol&#39;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#39;https&#39;</span>,
-
-    <span style="color:#75715e"># 保存config.php</span>
-
-    <span style="color:#75715e"># 继续去敲命令</span>
-    <span style="color:#75715e"># 让上传下载满速，不然只能10～20m/s的速度</span>
-    docker exec --user www-data app-server php occ config:app:set files max_chunk_size --value <span style="color:#ae81ff">0</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>    <span style="color:#75715e"># 定位到程序目录</span>
+</span></span><span style="display:flex;"><span>    cd /mydata/nextcloud
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 启动程序</span>
+</span></span><span style="display:flex;"><span>    docker-compose -f docker-compose.yml -f ssl.yml up -d
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 运行脚本前先看下是不是程序能跑了，能跑了 再运行脚本，脚本主要是用来串联，nextcloud和onlyoffice</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    bash set_configuration.sh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 修改下程序的配置,用来应对域名访问问题,以及https 没有自动跳转的问题</span>
+</span></span><span style="display:flex;"><span>    ./nextcloud/app_data/config/config.php
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 修改为（新增局域网域名，和外网域名）</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;trusted_domains&#39;</span> <span style="color:#f92672">=</span>&gt; 
+</span></span><span style="display:flex;"><span>    array <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>        0 <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#39;localhost&#39;</span>,
+</span></span><span style="display:flex;"><span>        1 <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#39;nginx-server&#39;</span>,
+</span></span><span style="display:flex;"><span>        2 <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#39;192.168.x.x&#39;</span>,
+</span></span><span style="display:flex;"><span>        3 <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#39;xxx.xxx.com&#39;</span>,  
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">)</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 新增</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;overwriteprotocol&#39;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#39;https&#39;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 保存config.php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 继续去敲命令</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 让上传下载满速，不然只能10～20m/s的速度</span>
+</span></span><span style="display:flex;"><span>    docker exec --user www-data app-server php occ config:app:set files max_chunk_size --value <span style="color:#ae81ff">0</span>
+</span></span></code></pre></div></li>
 <li>
 <h1 id="收尾检查下脚本的优化任务是否正常执行">收尾（检查下脚本的优化任务是否正常执行）</h1>
 <ul>
@@ -696,16 +694,16 @@ docker exec -u www-data app-server php occ --no-warnings config:system:set allow
 <ul>
 <li>查看/修改 定时任务</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    crontab -e
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>    crontab -e
+</span></span></code></pre></div><ul>
 <li>检查是否存在</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    */5 * * * * docker exec --user www-data app-server php /var/www/html/cron.php 
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>    */5 * * * * docker exec --user www-data app-server php /var/www/html/cron.php 
+</span></span></code></pre></div><ul>
 <li>如果没有就新增，新增后重启任务</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    service cron restart
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>    service cron restart
+</span></span></code></pre></div></li>
 <li>
 <p>安装/配置/优化部分已经完成</p>
 </li>
@@ -714,14 +712,14 @@ docker exec -u www-data app-server php occ --no-warnings config:system:set allow
 <li>
 <h1 id="安装插件">安装插件</h1>
 <ul>
-<li>自带的插件安装平台，因为和谐原因，下载安装会有问题，建议别尝试，很容易进入维护模式，如果不小心进入了维护模式，也别急，config.php 文件中设置为&rsquo;auth.bruteforce.protection.enabled' =&gt; false, 然后再刷下就好了</li>
+<li>自带的插件安装平台，因为和谐原因，下载安装会有问题，建议别尝试，很容易进入维护模式，如果不小心进入了维护模式，也别急，config.php 文件中设置为&rsquo;auth.bruteforce.protection.enabled&rsquo; =&gt; false, 然后再刷下就好了</li>
 <li><a href="https://apps.nextcloud.com/">去官网下载插件（也许可能需要科学访问）</a></li>
 <li>这里就演示一个，其他的方法相同</li>
 <li>下载files_mindmap-0.0.24.tar.gz（在线思维导图）</li>
 <li>把压缩包上传到/mydata/nextcloud_apps</li>
 <li>解压缩到插件文件夹/mydata/nextcloud/app_data/apps
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    tar zxvf  /mydata/nextcloud_apps/files_mindmap-0.0.24.tar.gz -C /mydata/nextcloud/app_data/apps
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>    tar zxvf  /mydata/nextcloud_apps/files_mindmap-0.0.24.tar.gz -C /mydata/nextcloud/app_data/apps
+</span></span></code></pre></div></li>
 <li>用管理员登录nextcloud 开启插件</li>
 <li>应用-&gt;已禁用的应用-&gt;Mind Map -&gt;启用</li>
 <li>刷新网站，就可以去文件中新建思维导图了</li>
@@ -803,6 +801,10 @@ docker exec -u www-data app-server php occ --no-warnings config:system:set allow
     <div id="commento"></div>
 
 
+            
+
+            
+
         </div>
     
 
@@ -852,37 +854,46 @@ docker exec -u www-data app-server php occ --no-warnings config:system:set allow
 
         
         <div class="categories">
-            <a href="/categories/"><strong>Categories</strong></a>
+            
+            <a href="https://woodwen.github.io/categories/"><strong>Categories</strong></a>
+            
+
             <ul>
                 
                 <li>
-                    <a href="/categories/build">Build
-                        (4)</a>
+                
+                    <a href="https://woodwen.github.io/categories/build/">build (4)</a>
+                
                 </li>
                 
                 <li>
-                    <a href="/categories/flutter">Flutter
-                        (2)</a>
+                
+                    <a href="https://woodwen.github.io/categories/flutter/">flutter (2)</a>
+                
                 </li>
                 
                 <li>
-                    <a href="/categories/%E9%9A%8F%E7%AC%94">随笔
-                        (2)</a>
+                
+                    <a href="https://woodwen.github.io/categories/%E9%9A%8F%E7%AC%94/">随笔 (2)</a>
+                
                 </li>
                 
                 <li>
-                    <a href="/categories/android">Android
-                        (1)</a>
+                
+                    <a href="https://woodwen.github.io/categories/android/">android (1)</a>
+                
                 </li>
                 
                 <li>
-                    <a href="/categories/jellyfin">Jellyfin
-                        (1)</a>
+                
+                    <a href="https://woodwen.github.io/categories/jellyfin/">jellyfin (1)</a>
+                
                 </li>
                 
                 <li>
-                    <a href="/categories/%E6%B2%B9%E7%8C%B4">油猴
-                        (1)</a>
+                
+                    <a href="https://woodwen.github.io/categories/%E6%B2%B9%E7%8C%B4/">油猴 (1)</a>
+                
                 </li>
                 
             </ul>
@@ -893,13 +904,18 @@ docker exec -u www-data app-server php occ --no-warnings config:system:set allow
             
             <div class="external-profiles">
                 <strong>Social media</strong>
-
                 
-                <a href="https://github.com/woodwen" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/woodwen" target="_blank" rel=""><em class="fab fa-github"></em></a>
                 
             </div>
             
 
+            
+
+            
+            <div class="archive">
+                
+            </div>
             
         </div>
     </div>
@@ -912,7 +928,7 @@ docker exec -u www-data app-server php occ --no-warnings config:system:set allow
             <a href="https://github.com/woodwen" target="_blank">
                 &copy;
                 
-                2021
+                2023
                 
                 by woodwen
             </a>
@@ -929,12 +945,13 @@ docker exec -u www-data app-server php occ --no-warnings config:system:set allow
     
 
     
-
-
-    <script type="text/javascript" src="https://woodwen.github.io/theme.js"></script>
+    <script src="https://woodwen.github.io/theme.js"></script>
+    
 
     
     
+    
+
     
 
     
