@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ai on 木头的小屋</title>
+    <link>https://woodwen.github.io/categories/ai/</link>
+    <description>Recent content in ai on 木头的小屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 03 Jul 2023 14:55:25 +0800</lastBuildDate><atom:link href="https://woodwen.github.io/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Copilot AI生成代码浅测</title>
+      <link>https://woodwen.github.io/code/ai-code-gen/</link>
+      <pubDate>Mon, 03 Jul 2023 14:55:25 +0800</pubDate>
+      
+      <guid>https://woodwen.github.io/code/ai-code-gen/</guid>
+      <description>&lt;h4 id=&#34;评测背景&#34;&gt;评测背景&lt;/h4&gt;
+&lt;p&gt;近年来，人工智能技术在软件开发领域取得了显著的进展，其中包括AI生成代码的应用。AI生成代码是指利用机器学习和自然语言处理等技术，让计算机能够根据给定的问题或需求自动生成代码。&lt;/p&gt;
+&lt;p&gt;AI生成代码的概念引发了广泛的研究和探索。传统的编码过程需要开发人员具备深入的编程知识和经验，而AI生成代码则提供了一种更加便捷和高效的方式来创建代码。它可以自动化部分编码任务，减少人为的错误和繁琐的重复工作，同时提高开发效率和生产力。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
